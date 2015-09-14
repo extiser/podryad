@@ -1,0 +1,51 @@
+.top-menu {
+	display: flex;
+
+	width: 85%;
+	margin-top: 46px;
+
+	align-items: flex-start;
+	justify-content: space-between;
+	&__item {
+		position: relative;
+
+		padding-left: 16px;
+		&:before {
+			left: 0;
+
+			@include content;
+			@include bg($menu);
+		}
+		span {
+			display: block;
+
+			width: 90%;
+			margin-top: 8px;
+
+			color: #b5b5b5;
+
+			font-size: em(12px);
+			line-height: em(12px, 12px);
+		}
+		&:hover {
+			&:before {
+				@include bg($menu-active);
+			}
+			span {
+				color: #6a6a6a;
+			}
+		}
+	}
+	&__link {
+		display: block;
+
+		margin-top: -3px;
+
+		color: #6a6a6a;
+
+		font-size: em(14px);
+		&:hover {
+			color: $blue;
+		}
+	}
+}

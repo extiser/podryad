@@ -1,0 +1,19 @@
+mixin header()
+	header.header
+		.header__wrapper
+			a(href="#" title="").header__logo
+
+			.header__content
+				.header-tender
+					a(href="#" title="").btn.btn--tender Объявить тендер
+					.header-tender__text 
+						span 20 городов
+						span 354 подрядчика
+						span 231 тендер
+
+				.header-login
+					a(href="#" title="") Вход 
+					span / 
+					a(href="#" title="") Регистрация
+
+				+top-menu()
