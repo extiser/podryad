@@ -2,6 +2,10 @@ mixin footer(data)
 	footer.footer
 		.footer__wrapper
 			p Название компании © 2015 год
+	+modal-enter()
+	+modal-registration()
+
+	.mask
 	//- Main scripts. You can replace it, but I recommend you to leave it here
-	script(src='http://yastatic.net/jquery/1.11.2/jquery.min.js')
+	script(src='http://yastatic.net/jquery/2.1.4/jquery.min.js')
 	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')

@@ -320,7 +320,7 @@ blockquote {
   font-weight: normal;
   font-style: normal; }
 
-.btn, .search-contractor__btn {
+.btn, .form__submit, .search-contractor__btn {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -338,7 +338,7 @@ blockquote {
   font-family: "ReformaGroteskDemiC";
   font-size: 1.125em;
   line-height: 44px; }
-  .btn:before, .search-contractor__btn:before {
+  .btn:before, .form__submit:before, .search-contractor__btn:before {
     left: 0;
     position: absolute;
     display: block;
@@ -358,6 +358,37 @@ blockquote {
     background-size: 344px, 243px;
     background-repeat: no-repeat; }
 
+.form {
+  margin-top: 15px; }
+  .form__label {
+    display: block;
+    color: #444;
+    font-size: 0.875em; }
+  .form__input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 5px; }
+    .form__input:focus {
+      outline: none; }
+  .form__submit {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    border: 0;
+    font-size: 1.4375em; }
+  .form a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00acff;
+    font-weight: 700; }
+    .form a:hover {
+      text-decoration: none; }
+
 html, body {
   height: 100%;
   font-family: "Calibri"; }
@@ -374,7 +405,7 @@ html, body {
   display: none;
   width: 100%;
   height: 100%;
-  background: transparent; }
+  background: rgba(0, 0, 0, 0.6); }
   .mask.active {
     display: block; }
 
@@ -392,7 +423,7 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.title, .search-contractor__title, .seo-text h1, .service__title, .sidebar-news__title {
+.title, .modal__title, .search-contractor__title, .seo-text h1, .service__title, .sidebar-news__title {
   text-transform: uppercase;
   color: #6a6a6a;
   font-family: "ReformaGroteskDemiC";
@@ -540,6 +571,49 @@ html, body {
     font-family: "ReformaGroteskDemiC";
     font-size: 2.625em; }
 
+.modal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 320px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 5px;
+  background: #fff; }
+  .modal.active {
+    display: block; }
+  .modal.enter {
+    height: 270px; }
+  .modal.registration {
+    height: 260px; }
+  .modal__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d2d3d5; }
+  .modal__close {
+    position: absolute;
+    top: 5px;
+    right: 10px; }
+    .modal__close:hover {
+      cursor: pointer; }
+
+.registration__item {
+  display: block;
+  margin-top: 15px;
+  padding: 15px;
+  text-decoration: none;
+  color: #00acff;
+  font-size: 1.3125em; }
+  .registration__item:hover {
+    background: #eee; }
+  .registration__item span {
+    display: block;
+    color: #444;
+    font-size: 0.66667em; }
+
 .search-contractor {
   display: -webkit-box;
   display: -webkit-flex;
@@ -581,7 +655,7 @@ html, body {
     line-height: inherit; }
     .search-contractor__btn span {
       display: block;
-      text-transform: lowercase;
+      text-transform: uppercase;
       color: #f8f8f8;
       font-family: "Calibri";
       font-size: 0.5em; }
