@@ -1,0 +1,24 @@
+mixin modal-enter()
+	.modal.enter#enter
+		.modal__close x
+		.modal__title Войти
+
+		form(method="" action="").form
+			label.form__label E-mail:
+			input(type="email" value="").form__input
+
+			label.form__label Пароль:
+			input(type="password" value="").form__input
+
+			input(type="submit" value="Войти").form__submit
+			a(href="#" title="") Забыли пароль?
+
+mixin modal-registration()
+	.modal.registration#registration
+		.modal__close x
+		.modal__title Регистрация
+
+		a(href="#" title="").registration__item Я — заказчик
+			span Я собираюсь объявить тендер и выбрать подходящего мастера
+		a(href="#" title="").registration__item Я — подрядчик
+			span Я собираюсь разместить информацию о себе и участвовать в тендерах

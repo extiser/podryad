@@ -35,7 +35,7 @@
         <div class="header-tender"><a href="#" title="" class="btn btn--tender">Объявить тендер</a>
           <div class="header-tender__text"> <span>20 городов</span><span>354 подрядчика</span><span>231 тендер</span></div>
         </div>
-        <div class="header-login"><a href="#" title="">Вход </a><span>/ </span><a href="#" title="">Регистрация</a></div>
+        <div class="header-login"><a href="#" title="" data-click="modal" data-item="#enter">Вход </a><span>/ </span><a href="#" title="" data-click="modal" data-item="#registration">Регистрация</a></div>
         <nav class="top-menu">
           <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Главная</a><span>Главная страница сайта</span></div>
           <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Тендеры</a><span>Заявки на ремонт и строительство</span></div>
@@ -128,6 +128,22 @@
       <p>Название компании © 2015 год</p>
     </div>
   </footer>
-  <script src="http://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
+  <div id="enter" class="modal enter">
+    <div class="modal__close">x</div>
+    <div class="modal__title">Войти</div>
+    <form method="" action="" class="form">
+      <label class="form__label">E-mail:</label>
+      <input type="email" value="" class="form__input">
+      <label class="form__label">Пароль:</label>
+      <input type="password" value="" class="form__input">
+      <input type="submit" value="Войти" class="form__submit"><a href="#" title="">Забыли пароль?</a>
+    </form>
+  </div>
+  <div id="registration" class="modal registration">
+    <div class="modal__close">x</div>
+    <div class="modal__title">Регистрация</div><a href="#" title="" class="registration__item">Я — заказчик<span>Я собираюсь объявить тендер и выбрать подходящего мастера</span></a><a href="#" title="" class="registration__item">Я — подрядчик<span>Я собираюсь разместить информацию о себе и участвовать в тендерах</span></a>
+  </div>
+  <div class="mask"></div>
+  <script src="http://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
   <script src="static/js/main.min.js"></script>
 </body>
