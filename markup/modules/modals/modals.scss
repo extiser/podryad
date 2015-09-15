@@ -64,3 +64,60 @@
 		}
 	}
 }
+
+.specialization {
+	box-sizing: border-box;
+	width: 90%;
+	height: 90%;
+	overflow-y: scroll;
+}
+
+.specialization-list {
+	display: flex;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.specialization-column {
+	display: flex;
+
+	width: 50%;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__title {
+		width: 100%;
+		margin: 10px 0;
+
+		color: rgb(106, 106, 106);
+
+		font-family: ReformaGroteskDemiC;
+		font-size: 1.4375em;
+	}
+}
+
+.specialization-item {
+	width: 49%;
+	&__title {
+		margin: 10px 0;
+
+		color: rgb(106, 106, 106);
+
+		font-family: ReformaGroteskDemiC;
+		font-size: 1.3125em;
+	}
+	a {
+		position: relative;
+
+		display: block;
+
+		padding-left: 15px;
+
+		color: rgb(0, 172, 255);
+
+		font-size: .875em;
+	}
+}
