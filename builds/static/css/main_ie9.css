@@ -439,7 +439,7 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.title, .modal__title, .registration-contractor-content__title, .sidebar-news__title, .search-contractor__title, .service__title, .seo-text h1 {
+.title, .seo-text h1, .search-contractor__title, .registration-contractor-content__title, .modal__title, .service__title, .sidebar-news__title {
   text-transform: uppercase;
   color: #6a6a6a;
   font-family: "ReformaGroteskDemiC";
@@ -544,9 +544,6 @@ html, body {
     color: #6a6a6a;
     font-size: 1.125em; }
 
-.main-content, .registration-contractor-content {
-  width: 863px; }
-
 .main-img {
   position: relative;
   height: 342px;
@@ -586,6 +583,110 @@ html, body {
     color: #fff;
     font-family: "ReformaGroteskDemiC";
     font-size: 2.625em; }
+
+.main-content, .registration-contractor-content {
+  width: 863px; }
+
+.seo-text h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d2d3d5;
+  font-weight: normal; }
+.seo-text p {
+  margin-top: 10px;
+  color: #6a6a6a;
+  font-size: 0.875em;
+  line-height: 1em; }
+
+.search-contractor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .search-contractor__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d2d3d5; }
+  .search-contractor__img {
+    margin: 26px auto 0; }
+    .search-contractor__img--repair {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: 0px -119px;
+      width: 146px;
+      height: 124px;
+      background-size: 344px, 243px;
+      background-repeat: no-repeat; }
+    .search-contractor__img--build {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: 0px 0px;
+      width: 181px;
+      height: 119px;
+      background-size: 344px, 243px;
+      background-repeat: no-repeat; }
+  .search-contractor__btn {
+    top: -25px;
+    box-sizing: border-box;
+    width: 265px;
+    margin: auto;
+    padding: 0;
+    padding-top: 8px;
+    text-align: center;
+    line-height: inherit; }
+    .search-contractor__btn span {
+      display: block;
+      text-transform: uppercase;
+      color: #f8f8f8;
+      font-family: "Calibri";
+      font-size: 0.5em; }
+
+.search-contractor-block {
+  position: relative;
+  width: 50%; }
+  .search-contractor-block:first-child:after {
+    top: 60px;
+    right: 0;
+    width: 1px;
+    height: 135px;
+    background: #d2d3d5;
+    position: absolute;
+    display: block;
+    content: ""; }
+
+.registration-contractor-content {
+  padding-top: 15px; }
+  .registration-contractor-content__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d2d3d5; }
+  .registration-contractor-content__text {
+    margin: 15px 0;
+    padding: 10px 12px;
+    background: #eee;
+    font-size: 0.875em; }
+
+.registration-contractor-form__label span {
+  display: inline-block;
+  width: 180px;
+  padding-top: 10px; }
+.registration-contractor-form__row {
+  display: inline-block;
+  width: 450px;
+  margin-bottom: 10px;
+  vertical-align: top; }
+  .registration-contractor-form__row em {
+    display: block;
+    margin-top: 5px;
+    color: #444;
+    font-size: 0.75em; }
+.registration-contractor-form__input {
+  margin-bottom: 0; }
+.registration-contractor-form__btn {
+  width: 200px;
+  padding-left: 0;
+  text-align: center; }
 
 .modal {
   position: fixed;
@@ -710,202 +811,6 @@ html, body {
     .specialization-item a.foo {
       color: #cecece; }
 
-.registration-contractor-content {
-  padding-top: 15px; }
-  .registration-contractor-content__title {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d2d3d5; }
-  .registration-contractor-content__text {
-    margin: 15px 0;
-    padding: 10px 12px;
-    background: #eee;
-    font-size: 0.875em; }
-
-.registration-contractor-form__label span {
-  display: inline-block;
-  width: 180px;
-  padding-top: 10px; }
-.registration-contractor-form__row {
-  display: inline-block;
-  width: 450px;
-  margin-bottom: 10px;
-  vertical-align: top; }
-  .registration-contractor-form__row em {
-    display: block;
-    margin-top: 5px;
-    color: #444;
-    font-size: 0.75em; }
-.registration-contractor-form__input {
-  margin-bottom: 0; }
-.registration-contractor-form__btn {
-  width: 200px;
-  padding-left: 0;
-  text-align: center; }
-
-.sidebar {
-  width: 320px;
-  margin-top: 15px; }
-
-.sidebar-news__title {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #d2d3d5; }
-
-.sidebar-news-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #d2d3d5;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .sidebar-news-block:hover .sidebar-news-block__img img {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0); }
-  .sidebar-news-block__img {
-    margin-top: 4px;
-    margin-right: 5px; }
-    .sidebar-news-block__img img {
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%); }
-  .sidebar-news-block__link {
-    display: block;
-    text-decoration: none;
-    color: #6a6a6a;
-    border-bottom: 1px solid #6a6a6a; }
-    .sidebar-news-block__link:hover {
-      color: #00acff; }
-  .sidebar-news-block__text {
-    margin-top: 3px;
-    margin-bottom: 0;
-    color: #6a6a6a;
-    font-size: 0.75em;
-    line-height: 1em; }
-
-.sidebar-vk {
-  margin-top: 15px; }
-
-.search-contractor {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 15px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .search-contractor__title {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d2d3d5; }
-  .search-contractor__img {
-    margin: 26px auto 0; }
-    .search-contractor__img--repair {
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: 0px -119px;
-      width: 146px;
-      height: 124px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-    .search-contractor__img--build {
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: 0px 0px;
-      width: 181px;
-      height: 119px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-  .search-contractor__btn {
-    top: -25px;
-    box-sizing: border-box;
-    width: 265px;
-    margin: auto;
-    padding: 0;
-    padding-top: 8px;
-    text-align: center;
-    line-height: inherit; }
-    .search-contractor__btn span {
-      display: block;
-      text-transform: uppercase;
-      color: #f8f8f8;
-      font-family: "Calibri";
-      font-size: 0.5em; }
-
-.search-contractor-block {
-  position: relative;
-  width: 50%; }
-  .search-contractor-block:first-child:after {
-    top: 60px;
-    right: 0;
-    width: 1px;
-    height: 135px;
-    background: #d2d3d5;
-    position: absolute;
-    display: block;
-    content: ""; }
-
-.top-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 85%;
-  margin-top: 46px;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .top-menu__item {
-    position: relative;
-    padding-left: 16px; }
-    .top-menu__item:before {
-      left: 0;
-      position: absolute;
-      display: block;
-      content: "";
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -181px -185px;
-      width: 4px;
-      height: 45px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-    .top-menu__item span {
-      display: block;
-      width: 90%;
-      margin-top: 8px;
-      color: #b5b5b5;
-      font-size: 0.75em;
-      line-height: 1em; }
-    .top-menu__item:hover:before {
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -338px -62px;
-      width: 4px;
-      height: 45px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-    .top-menu__item:hover span {
-      color: #6a6a6a; }
-  .top-menu__link {
-    display: block;
-    margin-top: -3px;
-    color: #6a6a6a;
-    font-size: 0.875em; }
-    .top-menu__link:hover {
-      color: #00acff; }
-
 .service {
   display: -webkit-box;
   display: -webkit-flex;
@@ -981,12 +886,107 @@ html, body {
     font-size: 0.875em;
     line-height: 0.875em; }
 
-.seo-text h1 {
+.sidebar {
+  width: 320px;
+  margin-top: 15px; }
+
+.sidebar-news__title {
+  margin-bottom: 10px;
   padding-bottom: 5px;
+  border-bottom: 1px solid #d2d3d5; }
+
+.sidebar-news-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #d2d3d5;
-  font-weight: normal; }
-.seo-text p {
-  margin-top: 10px;
-  color: #6a6a6a;
-  font-size: 0.875em;
-  line-height: 1em; }
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .sidebar-news-block:hover .sidebar-news-block__img img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+  .sidebar-news-block__img {
+    margin-top: 4px;
+    margin-right: 5px; }
+    .sidebar-news-block__img img {
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+  .sidebar-news-block__link {
+    display: block;
+    text-decoration: none;
+    color: #6a6a6a;
+    border-bottom: 1px solid #6a6a6a; }
+    .sidebar-news-block__link:hover {
+      color: #00acff; }
+  .sidebar-news-block__text {
+    margin-top: 3px;
+    margin-bottom: 0;
+    color: #6a6a6a;
+    font-size: 0.75em;
+    line-height: 1em; }
+
+.sidebar-vk {
+  margin-top: 15px; }
+
+.top-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin-top: 46px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .top-menu__item {
+    position: relative;
+    padding-left: 16px; }
+    .top-menu__item:before {
+      left: 0;
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: -181px -185px;
+      width: 4px;
+      height: 45px;
+      background-size: 344px, 243px;
+      background-repeat: no-repeat; }
+    .top-menu__item span {
+      display: block;
+      width: 90%;
+      margin-top: 8px;
+      color: #b5b5b5;
+      font-size: 0.75em;
+      line-height: 1em; }
+    .top-menu__item:hover:before {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: -338px -62px;
+      width: 4px;
+      height: 45px;
+      background-size: 344px, 243px;
+      background-repeat: no-repeat; }
+    .top-menu__item:hover span {
+      color: #6a6a6a; }
+  .top-menu__link {
+    display: block;
+    margin-top: -3px;
+    color: #6a6a6a;
+    font-size: 0.875em; }
+    .top-menu__link:hover {
+      color: #00acff; }
