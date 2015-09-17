@@ -18,10 +18,40 @@ mixin modal-registration()
 		.modal__close x
 		.modal__title Регистрация
 
-		a(href="#" title="").registration__item Я — заказчик
+		a(href="#" title="" data-click="modal" data-item="#registration-customer").registration__item Я — заказчик
 			span Я собираюсь объявить тендер и выбрать подходящего мастера
-		a(href="#" title="").registration__item Я — подрядчик
+		a(href="/registration-contractor.html" title="").registration__item Я — подрядчик
 			span Я собираюсь разместить информацию о себе и участвовать в тендерах
+
+mixin modal-registration-customer()
+	.modal.registration-customer#registration-customer
+		.modal__close x
+		.modal__title Регистрация заказчика
+
+		form(method="" action="").form
+			label.form__label.form__label--required Фамилия:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Имя:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required E-mail:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Телефон:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Пароль:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Повторите пароль:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--license
+				input(type="checkbox" value="") 
+				| Я согласен с условиями пользования сервисом
+
+			input(type="submit" value="Зарегистрироваться").form__submit
 
 mixin modal-specialization()
 	.modal#specialization.specialization

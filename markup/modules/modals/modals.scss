@@ -17,12 +17,6 @@
 	&.active {
 		display: block;
 	}
-	&.enter {
-		height: 270px;
-	}
-	&.registration {
-		height: 260px;
-	}
 	&__title {
 		padding-bottom: 5px;
 
@@ -40,7 +34,12 @@
 	}
 }
 
+.enter {
+	height: 270px;
+}
+
 .registration {
+	height: 260px;
 	&__item {
 		display: block;
 
@@ -65,11 +64,18 @@
 	}
 }
 
+.registration-customer {
+	position: absolute;
+
+	height: 88%;
+}
+
 .specialization {
+	overflow-y: scroll;
+
 	box-sizing: border-box;
 	width: 90%;
 	height: 90%;
-	overflow-y: scroll;
 }
 
 .specialization-list {
@@ -116,8 +122,30 @@
 
 		padding-left: 15px;
 
-		color: rgb(0, 172, 255);
+		color: $blue;
 
 		font-size: .875em;
+		&:hover {
+			text-decoration: none;
+		}
+		&:before {
+			position: absolute;
+			left: 0;
+
+			content: "—";
+
+			color: #444;
+		}
+		&.active {
+			color: $blue !important;
+			&:before {
+				left: 3px;
+
+				content: "+";
+			}
+		}
+		&.foo {
+			color: #cecece;
+		}
 	}
 }
