@@ -321,7 +321,7 @@ blockquote {
   font-weight: normal;
   font-style: normal; }
 
-.btn, .form__submit, .search-contractor__btn {
+.btn, .form__submit, .specialization__btn, .search-contractor__btn {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -339,7 +339,7 @@ blockquote {
   font-family: "ReformaGroteskDemiC";
   font-size: 1.125em;
   line-height: 44px; }
-  .btn:before, .form__submit:before, .search-contractor__btn:before {
+  .btn:before, .form__submit:before, .specialization__btn:before, .search-contractor__btn:before {
     left: 0;
     position: absolute;
     display: block;
@@ -439,9 +439,11 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.title, .seo-text h1, .search-contractor__title, .registration-contractor-content__title, .modal__title, .service__title, .sidebar-news__title {
+.title, .news-full-content h1, .modal__title, .registration-contractor-content__title, .service__title, .search-contractor__title, .sidebar-news__title, .seo-text h1, .news-content__title {
+  padding-bottom: 5px;
   text-transform: uppercase;
   color: #6a6a6a;
+  border-bottom: 1px solid #d2d3d5;
   font-family: "ReformaGroteskDemiC";
   font-size: 1.875em; }
 
@@ -584,109 +586,32 @@ html, body {
     font-family: "ReformaGroteskDemiC";
     font-size: 2.625em; }
 
-.main-content, .registration-contractor-content {
+.main-content, .news-full-content, .registration-contractor-content, .news-content {
   width: 863px; }
 
-.seo-text h1 {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #d2d3d5;
-  font-weight: normal; }
-.seo-text p {
-  margin-top: 10px;
+.news-full-content {
   color: #6a6a6a;
-  font-size: 0.875em;
-  line-height: 1em; }
-
-.search-contractor {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 15px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .search-contractor__title {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d2d3d5; }
-  .search-contractor__img {
-    margin: 26px auto 0; }
-    .search-contractor__img--repair {
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: 0px -119px;
-      width: 146px;
-      height: 124px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-    .search-contractor__img--build {
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: 0px 0px;
-      width: 181px;
-      height: 119px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-  .search-contractor__btn {
-    top: -25px;
-    box-sizing: border-box;
-    width: 265px;
-    margin: auto;
-    padding: 0;
-    padding-top: 8px;
-    text-align: center;
-    line-height: inherit; }
-    .search-contractor__btn span {
-      display: block;
-      text-transform: uppercase;
-      color: #f8f8f8;
-      font-family: "Calibri";
-      font-size: 0.5em; }
-
-.search-contractor-block {
-  position: relative;
-  width: 50%; }
-  .search-contractor-block:first-child:after {
-    top: 60px;
-    right: 0;
-    width: 1px;
-    height: 135px;
-    background: #d2d3d5;
-    position: absolute;
+  font-size: 1em; }
+  .news-full-content h1 {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .news-full-content img[align="left"] {
+    margin-right: 15px;
+    margin-bottom: 10px; }
+  .news-full-content span {
     display: block;
-    content: ""; }
-
-.registration-contractor-content {
-  padding-top: 15px; }
-  .registration-contractor-content__title {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d2d3d5; }
-  .registration-contractor-content__text {
-    margin: 15px 0;
-    padding: 10px 12px;
-    background: #eee;
+    text-align: right;
+    color: #9f9f9f;
     font-size: 0.875em; }
-
-.registration-contractor-form__label span {
-  display: inline-block;
-  width: 180px;
-  padding-top: 10px; }
-.registration-contractor-form__row {
-  display: inline-block;
-  width: 450px;
-  margin-bottom: 10px;
-  vertical-align: top; }
-  .registration-contractor-form__row em {
-    display: block;
-    margin-top: 5px;
-    color: #444;
-    font-size: 0.75em; }
-.registration-contractor-form__input {
-  margin-bottom: 0; }
-.registration-contractor-form__btn {
-  width: 200px;
-  padding-left: 0;
-  text-align: center; }
+  .news-full-content p {
+    text-align: justify;
+    line-height: 1em; }
+  .news-full-content__social {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+    .news-full-content__social img {
+      display: block;
+      margin-top: 7px; }
 
 .modal {
   position: fixed;
@@ -741,6 +666,19 @@ html, body {
   box-sizing: border-box;
   width: 90%;
   height: 90%; }
+  .specialization__btn {
+    position: relative;
+    top: -5px;
+    left: 20px;
+    display: inline-block;
+    width: 150px;
+    height: 32px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 0.625em;
+    line-height: 32px; }
+    .specialization__btn:hover {
+      cursor: pointer; }
 
 .specialization-list {
   display: -webkit-box;
@@ -811,6 +749,63 @@ html, body {
     .specialization-item a.foo {
       color: #cecece; }
 
+.registration-contractor-content {
+  padding-top: 15px; }
+  .registration-contractor-content__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d2d3d5; }
+  .registration-contractor-content__text {
+    margin: 15px 0;
+    padding: 10px 12px;
+    background: #eee;
+    font-size: 0.875em; }
+
+.registration-contractor-form__label span {
+  display: inline-block;
+  width: 180px;
+  padding-top: 10px; }
+.registration-contractor-form__row {
+  display: inline-block;
+  width: 450px;
+  margin-bottom: 10px;
+  vertical-align: top; }
+  .registration-contractor-form__row em {
+    display: block;
+    margin-top: 5px;
+    color: #444;
+    font-size: 0.75em; }
+.registration-contractor-form__input {
+  margin-bottom: 0; }
+.registration-contractor-form__btn {
+  width: 200px;
+  padding-left: 0;
+  text-align: center; }
+
+.specialization-list-selected {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .specialization-list-selected__item {
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    white-space: nowrap;
+    color: #fff;
+    background: #00acff;
+    font-size: 0.75em; }
+
 .service {
   display: -webkit-box;
   display: -webkit-flex;
@@ -829,9 +824,7 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .service__title {
-    width: 100%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d2d3d5; }
+    width: 100%; }
   .service__bottom {
     margin: 25px auto; }
 
@@ -886,6 +879,65 @@ html, body {
     font-size: 0.875em;
     line-height: 0.875em; }
 
+.search-contractor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .search-contractor__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d2d3d5; }
+  .search-contractor__img {
+    margin: 26px auto 0; }
+    .search-contractor__img--repair {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: 0px -119px;
+      width: 146px;
+      height: 124px;
+      background-size: 344px, 243px;
+      background-repeat: no-repeat; }
+    .search-contractor__img--build {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: 0px 0px;
+      width: 181px;
+      height: 119px;
+      background-size: 344px, 243px;
+      background-repeat: no-repeat; }
+  .search-contractor__btn {
+    top: -25px;
+    box-sizing: border-box;
+    width: 265px;
+    margin: auto;
+    padding: 0;
+    padding-top: 8px;
+    text-align: center;
+    line-height: inherit; }
+    .search-contractor__btn span {
+      display: block;
+      text-transform: uppercase;
+      color: #f8f8f8;
+      font-family: "Calibri";
+      font-size: 0.5em; }
+
+.search-contractor-block {
+  position: relative;
+  width: 50%; }
+  .search-contractor-block:first-child:after {
+    top: 60px;
+    right: 0;
+    width: 1px;
+    height: 135px;
+    background: #d2d3d5;
+    position: absolute;
+    display: block;
+    content: ""; }
+
 .sidebar {
   width: 320px;
   margin-top: 15px; }
@@ -938,12 +990,22 @@ html, body {
 .sidebar-vk {
   margin-top: 15px; }
 
+.seo-text h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d2d3d5;
+  font-weight: normal; }
+.seo-text p {
+  margin-top: 10px;
+  color: #6a6a6a;
+  font-size: 0.875em;
+  line-height: 1em; }
+
 .top-menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 85%;
+  width: 75%;
   margin-top: 46px;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -958,15 +1020,15 @@ html, body {
     padding-left: 16px; }
     .top-menu__item:before {
       left: 0;
-      position: absolute;
-      display: block;
-      content: "";
       background-image: url(../images/png-sprite/96dpi/sprite.png);
       background-position: -181px -185px;
       width: 4px;
       height: 45px;
       background-size: 344px, 243px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      content: ""; }
     .top-menu__item span {
       display: block;
       width: 90%;
@@ -983,6 +1045,8 @@ html, body {
       background-repeat: no-repeat; }
     .top-menu__item:hover span {
       color: #6a6a6a; }
+    .top-menu__item:hover .top-menu-inside {
+      display: block; }
   .top-menu__link {
     display: block;
     margin-top: -3px;
@@ -990,3 +1054,54 @@ html, body {
     font-size: 0.875em; }
     .top-menu__link:hover {
       color: #00acff; }
+
+.top-menu-inside {
+  position: absolute;
+  display: none;
+  padding-top: 15px; }
+  .top-menu-inside__link {
+    display: block;
+    color: #6a6a6a;
+    font-size: 0.875em; }
+    .top-menu-inside__link:hover {
+      color: #00acff; }
+
+.news-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .news-content__title {
+    width: 100%;
+    margin-bottom: 15px; }
+
+.news-content-item {
+  width: 275px;
+  margin-bottom: 15px; }
+  .news-content-item img {
+    line-height: 0; }
+  .news-content-item p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #6a6a6a;
+    font-size: 1em;
+    line-height: 1em; }
+  .news-content-item span {
+    display: block;
+    text-align: right;
+    color: #9f9f9f;
+    font-size: 0.875em;
+    line-height: 0.85714em; }

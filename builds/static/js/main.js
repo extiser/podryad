@@ -19,16 +19,29 @@ $(document).ready(function () {
         } else {
             $(this).toggleClass('active');
         }
-        var item = $('#specialization').find('.specialization-item a.active');
-        // item.each(function () {
-        //     var itemValue = $(this).html();
-        //     var curValue = $('#specialization-input').val();
-        //     $('#specialization-input').val(curValue + itemValue + '|');
-        // });
-        if (item.length >= 10) {
+        var item = $('#specialization').find('a.active');
+        var countItem = item.length;
+        if (countItem == 10) {
             $('.specialization-item a').addClass('foo');
+            if ($('.specialization-item a').hasClass('active')) {
+                $(item).removeClass('foo');
+            }
         } else {
             $('.specialization-item a').removeClass('foo');
         }
+    });
+
+    $('.specialization__btn').click(function () {
+        var item = $('#specialization').find('a.active');
+        $('.specialization-list-selected').html(' ');
+        $('.mask, .modal__close, .modal, body').removeClass('active');
+        if (item.length != 0) {
+            $('.registration-contractor-form__btn').html('Изменить специализацию');
+        } else {
+            $('.registration-contractor-form__btn').html('Выбрать специализацию');
+        }
+        item.each(function (index, element) {
+            $('.specialization-list-selected').append('<div class="specialization-list-selected__item">' + $(element).html() + '</div>');
+        });
     });
 });

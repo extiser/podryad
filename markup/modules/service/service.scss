@@ -8,9 +8,6 @@
 	justify-content: space-between;
 	&__title {
 		width: 100%;
-		padding-bottom: 5px;
-
-		border-bottom: 1px solid #d2d3d5;
 
 		@extend .title;
 	}

@@ -1,7 +1,7 @@
 .top-menu {
 	display: flex;
 
-	width: 85%;
+	width: 75%;
 	margin-top: 46px;
 
 	align-items: flex-start;
@@ -13,8 +13,8 @@
 		&:before {
 			left: 0;
 
-			@include content;
 			@include bg($menu);
+			@include content;
 		}
 		span {
 			display: block;
@@ -34,12 +34,33 @@
 			span {
 				color: #6a6a6a;
 			}
+			.top-menu-inside {
+				display: block;
+			}
 		}
 	}
 	&__link {
 		display: block;
 
 		margin-top: -3px;
+
+		color: #6a6a6a;
+
+		font-size: em(14px);
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.top-menu-inside {
+	position: absolute;
+
+	display: none;
+
+	padding-top: 15px;
+	&__link {
+		display: block;
 
 		color: #6a6a6a;
 

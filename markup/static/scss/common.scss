@@ -5,7 +5,6 @@ body {
 	height: 100%;
 
 	font-family: "Calibri";
-
 	&.active {
 		overflow: hidden;
 	}
@@ -42,9 +41,12 @@ body {
 }
 
 .title {
+	padding-bottom: 5px;
+
 	text-transform: uppercase;
 
 	color: #6a6a6a;
+	border-bottom: 1px solid #d2d3d5;
 
 	font-family: "ReformaGroteskDemiC";
 	font-size: em(30px);
