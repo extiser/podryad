@@ -4,32 +4,48 @@
 		"selected_items":
 		[
 			[
-				"item",
-				"itemValue"
+				"t",
+				"top-menu-inside__link"
 			],
 			[
-				"fun",
-				"function"
-			],
-			[
-				"a",
-				"active"
-			],
-			[
-				"te",
-				"text-decoration"
-			],
-			[
-				"margin",
-				"margin-bottom"
+				"top",
+				"top-menu-inside"
 			],
 			[
 				"ma",
 				"margin-top"
 			],
 			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"news",
+				"news-full-content"
+			],
+			[
 				"pad",
-				"padding-top"
+				"padding"
+			],
+			[
+				"a",
+				"appendTo"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"item",
+				"item"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"margin",
+				"margin-bottom"
 			],
 			[
 				"re",
@@ -42,10 +58,6 @@
 			[
 				"marg",
 				"margin"
-			],
-			[
-				"marign",
-				"margin-bottom"
 			],
 			[
 				"form",
@@ -198,10 +210,6 @@
 			[
 				"new",
 				"news-line-item"
-			],
-			[
-				"top",
-				"top-menu-inside__title"
 			],
 			[
 				"top-",
@@ -404,10 +412,6 @@
 				"rating__item"
 			],
 			[
-				"t",
-				"top"
-			],
-			[
 				"mar",
 				"margin"
 			],
@@ -510,55 +514,11 @@
 			[
 				"chi",
 				"childNodes"
-			],
-			[
-				"gal",
-				"galleryElement"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "markup/pages/registration-contractor.jade",
-			"settings":
-			{
-				"buffer_size": 474,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/registration-contractor-content/registration-contractor-content.jade",
-			"settings":
-			{
-				"buffer_size": 3569,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/modals/modals.scss",
-			"settings":
-			{
-				"buffer_size": 1820,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/modals/modals.js",
-			"settings":
-			{
-				"buffer_size": 1240,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/registration-contractor-content/registration-contractor-content.scss",
-			"settings":
-			{
-				"buffer_size": 878,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -633,21 +593,33 @@
 	[
 		"/Users/extiser/git/podryad/markup",
 		"/Users/extiser/git/podryad/markup/modules",
-		"/Users/extiser/git/podryad/markup/modules/modals",
 		"/Users/extiser/git/podryad/markup/pages",
 		"/Users/extiser/git/podryad/markup/static",
 		"/Users/extiser/git/podryad/markup/static/scss"
 	],
 	"file_history":
 	[
-		"/Users/extiser/git/podryad/markup/modules/modals/modals.jade",
-		"/Users/extiser/git/podryad/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.jade",
+		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.scss",
+		"/Users/extiser/git/podryad/markup/pages/news.jade",
+		"/Users/extiser/git/podryad/markup/pages/news-full.jade",
+		"/Users/extiser/git/podryad/markup/modules/news-full-content/news-full-content.jade",
+		"/Users/extiser/git/podryad/markup/modules/news-full-content/news-full-content.scss",
 		"/Users/extiser/git/podryad/markup/modules/include/include.jade",
-		"/Users/extiser/git/podryad/markup/modules/modals/modals.scss",
-		"/Users/extiser/git/podryad/markup/modules/main-img/main-img.jade",
-		"/Users/extiser/git/podryad/markup/modules/modals/modals.js",
-		"/Users/extiser/git/podryad/markup/modules/footer/footer.jade",
+		"/Users/extiser/git/podryad/markup/modules/news-content/news-content.jade",
+		"/Users/extiser/git/podryad/markup/modules/news-content/news-content.scss",
+		"/Users/extiser/git/podryad/markup/modules/seo-text/seo-text.scss",
+		"/Users/extiser/git/podryad/markup/modules/service/service.scss",
 		"/Users/extiser/git/podryad/markup/static/scss/common.scss",
+		"/Users/extiser/git/podryad/markup/modules/modals/modals.js",
+		"/Users/extiser/git/podryad/markup/modules/registration-contractor-content/registration-contractor-content.jade",
+		"/Users/extiser/git/podryad/markup/modules/registration-contractor-content/registration-contractor-content.scss",
+		"/Users/extiser/git/podryad/markup/modules/modals/modals.scss",
+		"/Users/extiser/git/podryad/markup/modules/modals/modals.jade",
+		"/Users/extiser/git/podryad/markup/pages/registration-contractor.jade",
+		"/Users/extiser/git/podryad/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/podryad/markup/modules/main-img/main-img.jade",
+		"/Users/extiser/git/podryad/markup/modules/footer/footer.jade",
 		"/Users/extiser/.Trash/markup/modules/modals/modals.jade",
 		"/Users/extiser/git/podryad/markup/pages/index.jade",
 		"/Users/extiser/git/podryad/markup/modules/footer/footer.scss",
@@ -754,20 +726,7 @@
 		"/Users/extiser/git/amkodor/markup/pages/structure-inner.jade",
 		"/Users/extiser/git/amkodor/markup/pages/catalog.jade",
 		"/Users/extiser/git/amkodor/markup/modules/contact-content/catalog-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/catalog-table-content/catalog-table-content.scss",
-		"/Users/extiser/git/amkodor/markup/modules/contact-content/catalog-table-content.js",
-		"/Users/extiser/git/amkodor/markup/modules/catalog-table-content/catalog-table-content.jade",
-		"/Users/extiser/git/amkodor/markup/pages/catalog-table.jade",
-		"/Users/extiser/git/amkodor/markup/pages/contact.jade",
-		"/Users/extiser/git/amkodor/markup/modules/contact-content/contact-content.scss",
-		"/Users/extiser/git/amkodor/markup/pages/history.jade",
-		"/Users/extiser/git/amkodor/markup/modules/page-content/page-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/history-content/history-content.jade",
-		"/Users/extiser/git/amkodor/markup/pages/structure.jade",
-		"/Users/extiser/git/amkodor/markup/modules/main-block/main-block.scss",
-		"/Users/extiser/git/amkodor/markup/static/scss/common.scss",
-		"/Users/extiser/git/amkodor/markup/modules/slider/slider.js",
-		"/Users/extiser/git/amkodor/markup/pages/index.jade"
+		"/Users/extiser/git/amkodor/markup/modules/catalog-table-content/catalog-table-content.scss"
 	],
 	"find":
 	{
@@ -1059,164 +1018,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "markup/pages/registration-contractor.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								453,
-								453
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "markup/modules/registration-contractor-content/registration-contractor-content.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3553,
-								3553
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 495.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "markup/modules/modals/modals.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1820,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1723,
-								1723
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1589.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "markup/modules/modals/modals.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1240,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								877,
-								877
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "markup/modules/registration-contractor-content/registration-contractor-content.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 878,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								463,
-								463
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 204.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],

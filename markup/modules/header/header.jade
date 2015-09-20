@@ -1,5 +1,6 @@
-mixin header()
-	header.header
+mixin header(pageClass)
+	- if (pageClass == undefined) pageClass = ''
+	header.header(class="#{pageClass}")
 		.header__wrapper
 			a(href="#" title="").header__logo
 

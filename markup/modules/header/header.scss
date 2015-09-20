@@ -1,7 +1,21 @@
 .header {
-	padding: 38px 0 28px;
+	margin-bottom: 15px;
+	padding-top: 38px;
+	&.mainpage {
+		margin-bottom: 0;
+		padding-bottom: 28px;
+		.header__wrapper {
+			padding-bottom: 0;
+
+			border-bottom: none;
+		}
+	}
 	&__wrapper {
 		display: flex;
+
+		padding-bottom: 28px;
+
+		border-bottom: 1px solid #1884bf;
 
 		align-items: center;
 		@extend .wrapper;

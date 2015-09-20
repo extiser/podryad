@@ -1,0 +1,52 @@
+mixin contractor-content()
+	section.contractor-content
+		a(href="#" title="").contractor-back Вернуться к списку подрядчиков
+		.contractor-block
+			.contractor-block-avatar
+				img(src="%=staticPrefix=%images/content/contractor-avatar.jpg" alt="")
+				a(href="#" title="").contractor-block-avatar__btn ПРИГЛАСИТЬ НА ТЕНДЕР
+			.contractor-block-info
+				.contractor-block-info__name ТОО "СтройА",  Астана
+				.contractor-block-info__service Предлагаемые услуги
+					a(href="#" title="" data-show="самые крутые услуги").contractor-block-info-show показать
+				.contractor-block-info__contact.contractor-block-info__contact--phone 
+					a(href="#" title="" data-show="+7 956 123 45 56").contractor-block-info-show показать номер
+				.contractor-block-info__contact.contractor-block-info__contact--email 
+					a(href="#" title="" data-show="podryad@mail.com").contractor-block-info-show показать e-mail
+				.contractor-block-info__contact.contractor-block-info__contact--address 
+					a(href="#" title="" data-show="Казахстан, г. Астана, ул. Набережные Челны - 3").contractor-block-info-show показать адрес
+				.contractor-block-info__contact.contractor-block-info__contact--site 
+					a(href="#" title="" data-show="website.com").contractor-block-info-show показать сайт
+
+				.contractor-block-info__rating
+					a(href="#" title="") Супер 15
+					a(href="#" title="") Хорошо 6
+					a(href="#" title="") Средне 1
+					a(href="#" title="") Так себе 0
+
+			.contractor-block-images
+				- for (var i = 0; i < 10; i++) {
+				img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
+				- }
+
+		.contractor-meta
+			.contractor-meta__baner
+				img(src="%=staticPrefix=%images/content/contractor-baner.jpg" alt="")
+			.contractor-tabs
+				.contractor-tabs-control
+					a(href="#" title="").contractor-tabs-control__item.active Описание
+					a(href="#" title="").contractor-tabs-control__item Отзывы
+					a(href="#" title="").contractor-tabs-control__item Портфолио
+					a(href="#" title="").contractor-tabs-control__item Цены
+					a(href="#" title="").contractor-tabs-control__item Лицензии и сертификаты
+				.contractor-tabs-box
+					.contractor-tabs-box__item.contractor-tabs-description.active
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+						p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+						p It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					.contractor-tabs-box__item.contractor-tabs-reviews
+					.contractor-tabs-box__item.contractor-tabs-portfolio
+					.contractor-tabs-box__item.contractor-tabs-cost
+					.contractor-tabs-box__item.contractor-tabs-license
