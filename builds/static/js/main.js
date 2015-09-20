@@ -8,6 +8,7 @@ $(document).ready(function () {
             $(this).addClass('active').parent().append('<span>' + dataShow + '</span>');
             $(this).html($(this).text().replace('показать', 'скрыть'));
         }
+        return false;
     });
     $('.contractor-tabs-control__item').click(function () {
         var indexTab = $(this).index();
