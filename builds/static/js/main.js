@@ -18,6 +18,12 @@ $(document).ready(function () {
     });
 });
 
+;(function ($) {
+    $('.swipebox').swipebox({
+        useSVG: false
+    });
+})(jQuery);
+
 $(document).ready(function () {
     $('a[data-click="modal"]').click(function () {
         var itemWindow = $(this).data('item');

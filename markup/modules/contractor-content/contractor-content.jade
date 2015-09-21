@@ -26,7 +26,8 @@ mixin contractor-content()
 
 			.contractor-block-images
 				- for (var i = 0; i < 10; i++) {
-				img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
+				a(href="%=staticPrefix=%images/content/contractor-avatar.jpg" title="").swipebox
+					img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
 				- }
 
 		.contractor-meta
@@ -40,13 +41,51 @@ mixin contractor-content()
 					a(href="#" title="").contractor-tabs-control__item Цены
 					a(href="#" title="").contractor-tabs-control__item Лицензии и сертификаты
 				.contractor-tabs-box
-					.contractor-tabs-box__item.contractor-tabs-description.active
-						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					.contractor-tabs-box__item.active
+						.contractor-tabs-description
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-						p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+							p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
-						p It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					.contractor-tabs-box__item.contractor-tabs-reviews
+							p It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					.contractor-tabs-box__item
+						.contractor-tabs-reviews
+							.contractor-tabs-reviews-item
+								.contractor-tabs-reviews-item__img
+									img(src="%=staticPrefix=%images/content/contractor-reviews-avatar.jpg" alt="")
+								.contractor-tabs-reviews-item__content
+									.contractor-tabs-reviews-item__name Азамат Амиров
+									.contractor-tabs-reviews-item__rating.contractor-tabs-reviews-item__rating--like
+									.contractor-tabs-reviews-item__date 15.09.2015
+										span 14:03
+									.contractor-tabs-reviews-item__text
+										p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							.contractor-tabs-reviews-item
+								.contractor-tabs-reviews-item__img
+									img(src="%=staticPrefix=%images/content/contractor-reviews-avatar.jpg" alt="")
+								.contractor-tabs-reviews-item__content
+									.contractor-tabs-reviews-item__name Азамат Амиров
+									.contractor-tabs-reviews-item__rating.contractor-tabs-reviews-item__rating--dislike
+									.contractor-tabs-reviews-item__date 15.09.2015
+										span 14:03
+									.contractor-tabs-reviews-item__text
+										p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 					.contractor-tabs-box__item.contractor-tabs-portfolio
-					.contractor-tabs-box__item.contractor-tabs-cost
-					.contractor-tabs-box__item.contractor-tabs-license
+					.contractor-tabs-box__item
+						table.contractor-tabs-cost
+							tr
+								td №
+								td Название услуги
+								td Примерная стоимость
+							- for (var i = 1; i < 6; i++) {
+							tr 
+								td #{i}
+								td Название услуги
+								td от 90 000 тг.
+							- }
+					.contractor-tabs-box__item
+						.contractor-tabs-license
+							- for (var i = 0; i < 14; i++) {
+							img(src="%=staticPrefix=%images/content/license.jpg" alt="")
+							- }

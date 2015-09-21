@@ -17,3 +17,9 @@ $(document).ready(function () {
         return false;
     });
 });
+
+;(function ($) {
+    $('.swipebox').swipebox({
+        useSVG: false
+    });
+})(jQuery);

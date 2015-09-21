@@ -4,16 +4,56 @@
 		"selected_items":
 		[
 			[
-				"t",
-				"top-menu-inside__link"
+				"pad",
+				"padding-bottom"
 			],
 			[
 				"top",
-				"top-menu-inside"
+				"top-menu__link"
+			],
+			[
+				"data",
+				"dataShow"
+			],
+			[
+				"inde",
+				"indexTab"
 			],
 			[
 				"ma",
 				"margin-top"
+			],
+			[
+				"con",
+				"contractor-tabs"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"flex-",
+				"flex-start"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"t",
+				"top-menu-inside__link"
 			],
 			[
 				"marign",
@@ -24,16 +64,8 @@
 				"news-full-content"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"a",
 				"appendTo"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"item",
@@ -42,10 +74,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"re",
@@ -86,10 +114,6 @@
 			[
 				"magi",
 				"margin-bottom"
-			],
-			[
-				"fon",
-				"font-size"
 			],
 			[
 				"backgr",
@@ -200,10 +224,6 @@
 				"catalog-tabs-content"
 			],
 			[
-				"con",
-				"contact-content"
-			],
-			[
 				"sli",
 				"slider-item"
 			],
@@ -258,10 +278,6 @@
 			[
 				"bor",
 				"border-bottom"
-			],
-			[
-				"borde",
-				"border"
 			],
 			[
 				"me",
@@ -498,22 +514,6 @@
 			[
 				"border-r",
 				"border-right"
-			],
-			[
-				"inlin",
-				"inline-block"
-			],
-			[
-				"border-oc",
-				"border-color"
-			],
-			[
-				"th",
-				"thumbnail"
-			],
-			[
-				"chi",
-				"childNodes"
 			]
 		]
 	},
@@ -593,19 +593,29 @@
 	[
 		"/Users/extiser/git/podryad/markup",
 		"/Users/extiser/git/podryad/markup/modules",
+		"/Users/extiser/git/podryad/markup/modules/top-menu",
 		"/Users/extiser/git/podryad/markup/pages",
 		"/Users/extiser/git/podryad/markup/static",
 		"/Users/extiser/git/podryad/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-content.js",
 		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.jade",
 		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.scss",
+		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-content.jade",
+		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-content.scss",
+		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-block.scss",
+		"/Users/extiser/git/podryad/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/podryad/markup/pages/contractor.jade",
+		"/Users/extiser/git/podryad/markup/pages/index.jade",
+		"/Users/extiser/git/podryad/markup/modules/header/header.jade",
+		"/Users/extiser/git/podryad/markup/modules/header/header.scss",
+		"/Users/extiser/git/podryad/markup/modules/include/include.jade",
 		"/Users/extiser/git/podryad/markup/pages/news.jade",
 		"/Users/extiser/git/podryad/markup/pages/news-full.jade",
 		"/Users/extiser/git/podryad/markup/modules/news-full-content/news-full-content.jade",
 		"/Users/extiser/git/podryad/markup/modules/news-full-content/news-full-content.scss",
-		"/Users/extiser/git/podryad/markup/modules/include/include.jade",
 		"/Users/extiser/git/podryad/markup/modules/news-content/news-content.jade",
 		"/Users/extiser/git/podryad/markup/modules/news-content/news-content.scss",
 		"/Users/extiser/git/podryad/markup/modules/seo-text/seo-text.scss",
@@ -617,15 +627,11 @@
 		"/Users/extiser/git/podryad/markup/modules/modals/modals.scss",
 		"/Users/extiser/git/podryad/markup/modules/modals/modals.jade",
 		"/Users/extiser/git/podryad/markup/pages/registration-contractor.jade",
-		"/Users/extiser/git/podryad/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/podryad/markup/modules/main-img/main-img.jade",
 		"/Users/extiser/git/podryad/markup/modules/footer/footer.jade",
 		"/Users/extiser/.Trash/markup/modules/modals/modals.jade",
-		"/Users/extiser/git/podryad/markup/pages/index.jade",
 		"/Users/extiser/git/podryad/markup/modules/footer/footer.scss",
-		"/Users/extiser/git/podryad/markup/modules/header/header.jade",
 		"/Users/extiser/git/podryad/markup/modules/header/header.js",
-		"/Users/extiser/git/podryad/markup/modules/header/header.scss",
 		"/Users/extiser/git/podryad/markup/static/scss/fonts.scss",
 		"/Users/extiser/git/amkodor-lp/markup/modules/request/request.scss",
 		"/Users/extiser/git/amkodor-lp/markup/modules/request-now/request-now.scss",
@@ -721,12 +727,7 @@
 		"/Users/extiser/git/amkodor/markup/pages/cart.jade",
 		"/Users/extiser/git/amkodor/markup/pages/sertificate.jade",
 		"/Users/extiser/git/amkodor/markup/modules/sertificate-content/sertificate-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/sertificate-content/sertificate-content.scss",
-		"/Users/extiser/git/amkodor/markup/modules/structure-inner-content/structure-inner-content.jade",
-		"/Users/extiser/git/amkodor/markup/pages/structure-inner.jade",
-		"/Users/extiser/git/amkodor/markup/pages/catalog.jade",
-		"/Users/extiser/git/amkodor/markup/modules/contact-content/catalog-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/catalog-table-content/catalog-table-content.scss"
+		"/Users/extiser/git/amkodor/markup/modules/sertificate-content/sertificate-content.scss"
 	],
 	"find":
 	{

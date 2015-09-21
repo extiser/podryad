@@ -18,8 +18,8 @@
 		top: 0;
 		left: -28px;
 
-		@include content;
 		@include bg($contractor-back);
+		@include content;
 	}
 }
 
@@ -227,8 +227,8 @@
 			top: 0;
 			left: 0;
 
-			@include bg($tabs-control);
 			@include content;
+			@include bg($tabs-control);
 		}
 		&:hover,
 		&.active {
@@ -256,5 +256,92 @@
 		color: #6a6a6a;
 
 		font-size: em(14px);
+	}
+}
+
+.contractor-tabs-license {
+	display: flex;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	img {
+		margin-top: 10px;
+	}
+}
+
+.contractor-tabs-reviews {
+	padding-top: 10px;
+}
+
+.contractor-tabs-reviews-item {
+	display: flex;
+
+	align-items: flex-start;
+	justify-content: space-between;
+	&__img {
+		width: 172px;
+		margin-right: 16px;
+	}
+	&__content {
+		display: flex;
+
+		padding-top: 10px;
+
+		color: #999;
+
+		font-size: em(14px);
+
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	&__name {
+		margin-right: 20px;
+
+		color: #6a6a6a;
+	}
+	&__rating {
+		margin-top: 2px;
+		margin-right: 20px;
+		&--like {
+			@include bg($like);
+		}
+		&--dislike {
+			@include bg($dislike);
+		}
+	}
+	&__date {
+		span {
+			padding-left: 15px;
+		}
+	}
+	&__text {
+		width: 100%;
+	}
+}
+
+.contractor-tabs-cost {
+	width: 100%;
+	margin-top: 10px;
+
+	color: #6a6a6a;
+	border: 1px solid #b7b7b7;
+	border-collapse: collapse;
+
+	font-size: em(14px);
+	tr {
+		border: 1px solid #b7b7b7;
+		&:first-child {
+			text-align: center;
+		}
+	}
+	td {
+		padding: 6px 10px;
+
+		border: 1px solid #b7b7b7;
+		&:first-child {
+			text-align: center;
+		}
 	}
 }
