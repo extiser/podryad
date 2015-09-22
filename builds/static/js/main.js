@@ -16,6 +16,51 @@ $(document).ready(function () {
         $('.contractor-tabs-box__item').eq(indexTab).addClass('active').siblings().removeClass('active');
         return false;
     });
+    $('.slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.slider-small',
+        lazyLoad: 'ondemand'
+    });
+    $('.slider-small').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        lazyLoad: 'ondemand'
+    });
+    $('.portfolio-album').click(function () {
+        $('.slider-big').slick('unslick');
+        $('.slider-small').slick('unslick');
+        var indexTab = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.portfolio-slider').eq(indexTab).addClass('active').siblings().removeClass('active');
+        $('.portfolio-slider').children('.portfolio-slider-big').removeClass('slider-big');
+        $('.portfolio-slider').children('.portfolio-slider-small').removeClass('slider-small');
+        $('.portfolio-slider').eq(indexTab).children('.portfolio-slider-big').addClass('slider-big');
+        $('.portfolio-slider').eq(indexTab).children('.portfolio-slider-small').addClass('slider-small');
+        $('.slider-big').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            asNavFor: '.slider-small',
+            lazyLoad: 'ondemand'
+        });
+        $('.slider-small').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            asNavFor: '.slider-big',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            lazyLoad: 'ondemand'
+        });
+    });
 });
 
 ;(function ($) {

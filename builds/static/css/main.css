@@ -349,7 +349,7 @@ blockquote {
     background-position: -289px -168px;
     width: 48px;
     height: 43px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .btn--search {
     width: 230px; }
@@ -358,7 +358,7 @@ blockquote {
       background-position: -241px -125px;
       width: 43px;
       height: 43px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
 
 .form {
@@ -465,7 +465,7 @@ html, body {
     background-position: -203px -185px;
     width: 17px;
     height: 11px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
@@ -553,7 +553,7 @@ html, body {
       background-position: -181px -185px;
       width: 11px;
       height: 17px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .contractor-block-info__contact--email:before {
       top: 2px;
@@ -562,21 +562,21 @@ html, body {
       background-position: -181px -202px;
       width: 15px;
       height: 12px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .contractor-block-info__contact--address:before {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
       background-position: -192px -185px;
       width: 11px;
       height: 17px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .contractor-block-info__contact--site:before {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
       background-position: -258px -168px;
       width: 17px;
       height: 15px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
   .contractor-block-info__rating {
     display: -webkit-box;
@@ -682,7 +682,7 @@ html, body {
       background-position: -284px -125px;
       width: 4px;
       height: 32px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .contractor-tabs-control__item:hover, .contractor-tabs-control__item.active {
       text-decoration: underline;
@@ -692,13 +692,23 @@ html, body {
         background-position: -337px -168px;
         width: 4px;
         height: 32px;
-        background-size: 344px, 243px;
+        background-size: 344px, 303px;
         background-repeat: no-repeat; }
 
-.contractor-tabs-box__item {
-  display: none; }
-  .contractor-tabs-box__item.active {
-    display: block; }
+.contractor-tabs-box {
+  position: relative; }
+  .contractor-tabs-box__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0; }
+    .contractor-tabs-box__item.active {
+      position: relative;
+      visibility: visible;
+      overflow: auto;
+      height: auto; }
 
 .contractor-tabs-description p {
   color: #6a6a6a;
@@ -769,17 +779,17 @@ html, body {
     margin-right: 20px; }
     .contractor-tabs-reviews-item__rating--like {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -275px -168px;
-      width: 13px;
-      height: 12px;
-      background-size: 344px, 243px;
-      background-repeat: no-repeat; }
-    .contractor-tabs-reviews-item__rating--dislike {
-      background-image: url(../images/png-sprite/96dpi/sprite.png);
       background-position: -196px -202px;
       width: 13px;
       height: 12px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
+      background-repeat: no-repeat; }
+    .contractor-tabs-reviews-item__rating--dislike {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: -275px -168px;
+      width: 13px;
+      height: 12px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
   .contractor-tabs-reviews-item__date span {
     padding-left: 15px; }
@@ -802,6 +812,119 @@ html, body {
     border: 1px solid #b7b7b7; }
     .contractor-tabs-cost td:first-child {
       text-align: center; }
+
+.portfolio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.portfolio-sliders {
+  position: relative;
+  width: 600px; }
+
+.portfolio-slider {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0; }
+  .portfolio-slider.active {
+    visibility: visible;
+    overflow: auto;
+    height: auto; }
+
+.portfolio-slider-small {
+  padding-top: 10px; }
+  .portfolio-slider-small img {
+    height: 60px;
+    margin: 0 5px;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
+    .portfolio-slider-small img.slick-center {
+      -webkit-filter: brightness(100%);
+              filter: brightness(100%); }
+  .portfolio-slider-small .slick-next, .portfolio-slider-small .slick-prev {
+    position: absolute;
+    top: 10px;
+    text-indent: -9999px;
+    border: 0; }
+    .portfolio-slider-small .slick-next:focus, .portfolio-slider-small .slick-prev:focus {
+      outline: none; }
+  .portfolio-slider-small .slick-prev {
+    left: 0;
+    background-image: url(../images/png-sprite/96dpi/sprite.png);
+    background-position: -26px -243px;
+    width: 13px;
+    height: 60px;
+    background-size: 344px, 303px;
+    background-repeat: no-repeat; }
+    .portfolio-slider-small .slick-prev:hover {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: -158px -119px;
+      width: 13px;
+      height: 60px;
+      background-size: 344px, 303px;
+      background-repeat: no-repeat; }
+  .portfolio-slider-small .slick-next {
+    right: 0;
+    background-image: url(../images/png-sprite/96dpi/sprite.png);
+    background-position: -13px -243px;
+    width: 13px;
+    height: 60px;
+    background-size: 344px, 303px;
+    background-repeat: no-repeat; }
+    .portfolio-slider-small .slick-next:hover {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: 0px -243px;
+      width: 13px;
+      height: 60px;
+      background-size: 344px, 303px;
+      background-repeat: no-repeat; }
+
+.portfolio-albums {
+  overflow-y: scroll;
+  width: 340px;
+  height: 430px; }
+
+.portfolio-album {
+  margin-bottom: 20px; }
+  .portfolio-album:before, .portfolio-album:after {
+    display: table;
+    content: ""; }
+  .portfolio-album:after {
+    clear: both; }
+  .lt-ie8 .portfolio-album {
+    zoom: 1; }
+  .portfolio-album:hover {
+    cursor: pointer; }
+  .portfolio-album.active .portfolio-album__title {
+    color: #00acff; }
+  .portfolio-album.active .portfolio-album__count span {
+    background: #00acff; }
+  .portfolio-album__preview {
+    float: left;
+    margin-right: 20px; }
+  .portfolio-album__title {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #737373;
+    font-size: 0.875em; }
+  .portfolio-album__count {
+    color: #6a6a6a;
+    font-size: 0.875em; }
+    .portfolio-album__count span {
+      margin-left: 5px;
+      padding: 2px 10px 0;
+      background: #ffd200;
+      line-height: 1; }
 
 /*! Swipebox v1.3.0 | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/swipebox */
 html.swipebox-html.swipebox-touch {
@@ -926,20 +1049,20 @@ html.swipebox-html.swipebox-touch {
   margin-top: 15px;
   float: left;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -328px -211px;
+  background-position: -314px -211px;
   width: 14px;
   height: 22px;
-  background-size: 344px, 243px;
+  background-size: 344px, 303px;
   background-repeat: no-repeat; }
 
 #swipebox-next {
   margin-top: 15px;
   float: right;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -314px -211px;
+  background-position: -328px -211px;
   width: 14px;
   height: 22px;
-  background-size: 344px, 243px;
+  background-size: 344px, 303px;
   background-repeat: no-repeat; }
 
 #swipebox-close {
@@ -951,7 +1074,7 @@ html.swipebox-html.swipebox-touch {
   background-position: -241px -168px;
   width: 17px;
   height: 16px;
-  background-size: 344px, 243px;
+  background-size: 344px, 303px;
   background-repeat: no-repeat; }
 
 .swipebox-no-close-button #swipebox-close {
@@ -1096,7 +1219,7 @@ html.swipebox-html.swipebox-touch {
     background-position: -181px 0px;
     width: 108px;
     height: 125px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .header__content {
     display: -webkit-box;
@@ -1154,7 +1277,7 @@ html.swipebox-html.swipebox-touch {
     background-position: -289px -211px;
     width: 25px;
     height: 22px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .header-login a {
     text-decoration: none;
@@ -1482,14 +1605,14 @@ html.swipebox-html.swipebox-touch {
       background-position: 0px -119px;
       width: 146px;
       height: 124px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .search-contractor__img--build {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
       background-position: 0px 0px;
       width: 181px;
       height: 119px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
   .search-contractor__btn {
     top: -25px;
@@ -1567,14 +1690,14 @@ html.swipebox-html.swipebox-touch {
     background-position: -289px -120px;
     width: 54px;
     height: 48px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .service-block--n2:before {
     background-image: url(../images/png-sprite/96dpi/sprite.png);
     background-position: -181px -125px;
     width: 60px;
     height: 60px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .service-block--n3:before {
     top: -12px;
@@ -1582,7 +1705,7 @@ html.swipebox-html.swipebox-touch {
     background-position: -289px -62px;
     width: 49px;
     height: 58px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .service-block--n4:before {
     top: -5px;
@@ -1591,7 +1714,7 @@ html.swipebox-html.swipebox-touch {
     background-position: -289px 0px;
     width: 55px;
     height: 62px;
-    background-size: 344px, 243px;
+    background-size: 344px, 303px;
     background-repeat: no-repeat; }
   .service-block__link {
     text-transform: uppercase;
@@ -1679,10 +1802,10 @@ html.swipebox-html.swipebox-touch {
       display: block;
       content: "";
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -158px -119px;
+      background-position: -171px -119px;
       width: 4px;
       height: 45px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .top-menu__item span {
       display: block;
@@ -1696,7 +1819,7 @@ html.swipebox-html.swipebox-touch {
       background-position: -338px -62px;
       width: 4px;
       height: 45px;
-      background-size: 344px, 243px;
+      background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .top-menu__item:hover span {
       color: #6a6a6a; }
