@@ -13,8 +13,8 @@
 		&:before {
 			left: 0;
 
-			@include content;
 			@include bg($menu);
+			@include content;
 		}
 		span {
 			display: block;
@@ -56,15 +56,24 @@
 .top-menu-inside {
 	position: absolute;
 	z-index: 99;
+	top: 22px;
 
 	display: none;
 
-	padding-top: 15px;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
+	padding-top: 18px;
+	padding-right: 14px;
+	padding-bottom: 18px;
+	padding-left: 14px;
 
-	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	background: #fcfafb;
+	&:before {
+		top: -8px;
+
+		@include bg($drop-menu);
+		@include content;
+	}
 	&__link {
 		display: block;
 

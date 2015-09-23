@@ -18,3 +18,15 @@ mixin header(pageClass)
 					a(href="#" title="" data-click="modal" data-item="#registration") Регистрация
 
 				+top-menu()
+
+				.header-city
+					.header-city__title ВЫБЕРИТЕ ГОРОД:
+					.header-city-select
+						.header-city-select__current Астана
+						.header-city-select__list
+							.header-city-select__option Алматы
+							.header-city-select__option Караганда
+							.header-city-select__option Петровавловск
+							.header-city-select__option Усть-Каменогорск
+							.header-city-select__option Костанай
+					input(type="hidden" value="").header-city-select__input

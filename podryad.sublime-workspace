@@ -4,8 +4,76 @@
 		"selected_items":
 		[
 			[
+				"sli",
+				"slider-big"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
 				"pad",
-				"padding-bottom"
+				"padding"
+			],
+			[
+				"port",
+				"portfolio-album"
+			],
+			[
+				"po",
+				"portfolio-album"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"por",
+				"portfolio-slider"
+			],
+			[
+				"co",
+				"contractor-tabs"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"b",
+				"b7b7b7"
+			],
+			[
+				"border-col",
+				"border-collapse"
+			],
+			[
+				"contractor-tabs-re",
+				"contractor-tabs-reviews-item__rating"
+			],
+			[
+				"contractor-tabs-rev",
+				"contractor-tabs-reviews-item"
+			],
+			[
+				"con",
+				"contractor-tabs"
+			],
+			[
+				"cont",
+				"content"
 			],
 			[
 				"top",
@@ -20,28 +88,8 @@
 				"indexTab"
 			],
 			[
-				"ma",
-				"margin-top"
-			],
-			[
-				"con",
-				"contractor-tabs"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
 				"borde",
 				"border-bottom"
-			],
-			[
-				"te",
-				"text-decoration"
-			],
-			[
-				"border-col",
-				"border-color"
 			],
 			[
 				"flex-",
@@ -54,10 +102,6 @@
 			[
 				"t",
 				"top-menu-inside__link"
-			],
-			[
-				"marign",
-				"margin-top"
 			],
 			[
 				"news",
@@ -94,10 +138,6 @@
 			[
 				"fn",
 				"font-size"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"ou",
@@ -164,10 +204,6 @@
 				"margin-left"
 			],
 			[
-				"co",
-				"content"
-			],
-			[
 				"ser",
 				"services__item"
 			],
@@ -190,10 +226,6 @@
 			[
 				"border-bo",
 				"border-bottom"
-			],
-			[
-				"po",
-				"product-list-content-list"
 			],
 			[
 				"ca",
@@ -222,10 +254,6 @@
 			[
 				"cat",
 				"catalog-tabs-content"
-			],
-			[
-				"sli",
-				"slider-item"
 			],
 			[
 				"new",
@@ -486,39 +514,35 @@
 			[
 				"side",
 				"sidebar-widget"
-			],
-			[
-				"com",
-				"comments"
-			],
-			[
-				"si",
-				"similar-article"
-			],
-			[
-				"cate",
-				"category-item"
-			],
-			[
-				"border-b",
-				"border-bottom"
-			],
-			[
-				"bord",
-				"border-bottom"
-			],
-			[
-				"padi",
-				"padding-right"
-			],
-			[
-				"border-r",
-				"border-right"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "markup/modules/contractor-content/contractor-content.jade",
+			"settings":
+			{
+				"buffer_size": 9897,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/modules/contractor-content/swipebox.scss",
+			"settings":
+			{
+				"buffer_size": 5053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/modules/contractor-content/contractor-content.scss",
+			"settings":
+			{
+				"buffer_size": 6212,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -593,7 +617,9 @@
 	[
 		"/Users/extiser/git/podryad/markup",
 		"/Users/extiser/git/podryad/markup/modules",
-		"/Users/extiser/git/podryad/markup/modules/top-menu",
+		"/Users/extiser/git/podryad/markup/modules/contractor-content",
+		"/Users/extiser/git/podryad/markup/modules/footer",
+		"/Users/extiser/git/podryad/markup/modules/head",
 		"/Users/extiser/git/podryad/markup/pages",
 		"/Users/extiser/git/podryad/markup/static",
 		"/Users/extiser/git/podryad/markup/static/scss"
@@ -601,10 +627,12 @@
 	"file_history":
 	[
 		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-content.js",
-		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.jade",
-		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.scss",
+		"/Users/extiser/git/podryad/markup/modules/footer/footer.jade",
+		"/Users/extiser/git/podryad/markup/modules/contractor-content/swipebox.scss",
 		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-content.jade",
 		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-content.scss",
+		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.jade",
+		"/Users/extiser/git/podryad/markup/modules/top-menu/top-menu.scss",
 		"/Users/extiser/git/podryad/markup/modules/contractor-content/contractor-block.scss",
 		"/Users/extiser/git/podryad/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/podryad/markup/pages/contractor.jade",
@@ -628,7 +656,6 @@
 		"/Users/extiser/git/podryad/markup/modules/modals/modals.jade",
 		"/Users/extiser/git/podryad/markup/pages/registration-contractor.jade",
 		"/Users/extiser/git/podryad/markup/modules/main-img/main-img.jade",
-		"/Users/extiser/git/podryad/markup/modules/footer/footer.jade",
 		"/Users/extiser/.Trash/markup/modules/modals/modals.jade",
 		"/Users/extiser/git/podryad/markup/modules/footer/footer.scss",
 		"/Users/extiser/git/podryad/markup/modules/header/header.js",
@@ -726,8 +753,7 @@
 		"/Users/extiser/git/amkodor/markup/modules/cart-content/cart-content.scss",
 		"/Users/extiser/git/amkodor/markup/pages/cart.jade",
 		"/Users/extiser/git/amkodor/markup/pages/sertificate.jade",
-		"/Users/extiser/git/amkodor/markup/modules/sertificate-content/sertificate-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/sertificate-content/sertificate-content.scss"
+		"/Users/extiser/git/amkodor/markup/modules/sertificate-content/sertificate-content.jade"
 	],
 	"find":
 	{
@@ -1019,8 +1045,102 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "markup/modules/contractor-content/contractor-content.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6438,
+								6438
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2040.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/modules/contractor-content/swipebox.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "markup/modules/contractor-content/contractor-content.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4900,
+								4900
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5236.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
