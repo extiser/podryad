@@ -321,7 +321,7 @@ blockquote {
   font-weight: normal;
   font-style: normal; }
 
-.btn, .form__submit, .contractor-block-avatar__btn, .specialization__btn, .search-contractor__btn {
+.btn, .form__submit, .contractor-block-avatar__btn, .specialization__btn, .search-contractor__btn, .filter__submit {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -339,7 +339,7 @@ blockquote {
   font-family: "ReformaGroteskDemiC";
   font-size: 1.125em;
   line-height: 44px; }
-  .btn:before, .form__submit:before, .contractor-block-avatar__btn:before, .specialization__btn:before, .search-contractor__btn:before {
+  .btn:before, .form__submit:before, .contractor-block-avatar__btn:before, .specialization__btn:before, .search-contractor__btn:before, .filter__submit:before {
     left: 0;
     position: absolute;
     display: block;
@@ -439,7 +439,7 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.title, .modal__title, .news-content__title, .news-full-content h1, .registration-contractor-content__title, .search-contractor__title, .seo-text h1, .service__title, .sidebar-news__title {
+.title, .modal__title, .news-content__title, .news-full-content h1, .registration-contractor-content__title, .search-contractor__title, .search-contractor-content__title, .seo-text h1, .service__title, .sidebar-news__title {
   padding-bottom: 5px;
   text-transform: uppercase;
   color: #6a6a6a;
@@ -462,7 +462,7 @@ html, body {
     top: 0;
     left: -28px;
     background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -203px -185px;
+    background-position: -195px -185px;
     width: 17px;
     height: 11px;
     background-size: 344px, 303px;
@@ -550,7 +550,7 @@ html, body {
       content: ""; }
     .contractor-block-info__contact--phone:before {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -181px -185px;
+      background-position: -181px -199px;
       width: 11px;
       height: 17px;
       background-size: 344px, 303px;
@@ -559,14 +559,14 @@ html, body {
       top: 2px;
       left: 1px;
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -181px -202px;
+      background-position: -203px -199px;
       width: 15px;
       height: 12px;
       background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .contractor-block-info__contact--address:before {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -192px -185px;
+      background-position: -192px -199px;
       width: 11px;
       height: 17px;
       background-size: 344px, 303px;
@@ -779,14 +779,14 @@ html, body {
     margin-right: 20px; }
     .contractor-tabs-reviews-item__rating--like {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -275px -168px;
+      background-position: -218px -199px;
       width: 13px;
       height: 12px;
       background-size: 344px, 303px;
       background-repeat: no-repeat; }
     .contractor-tabs-reviews-item__rating--dislike {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -196px -202px;
+      background-position: -231px -199px;
       width: 13px;
       height: 12px;
       background-size: 344px, 303px;
@@ -861,14 +861,14 @@ html, body {
   .portfolio-slider-small .slick-prev {
     left: 0;
     background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -13px -243px;
+    background-position: 0px -243px;
     width: 13px;
     height: 60px;
     background-size: 344px, 303px;
     background-repeat: no-repeat; }
     .portfolio-slider-small .slick-prev:hover {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: 0px -243px;
+      background-position: -13px -243px;
       width: 13px;
       height: 60px;
       background-size: 344px, 303px;
@@ -876,14 +876,14 @@ html, body {
   .portfolio-slider-small .slick-next {
     right: 0;
     background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -26px -243px;
+    background-position: -158px -119px;
     width: 13px;
     height: 60px;
     background-size: 344px, 303px;
     background-repeat: no-repeat; }
     .portfolio-slider-small .slick-next:hover {
       background-image: url(../images/png-sprite/96dpi/sprite.png);
-      background-position: -158px -119px;
+      background-position: -26px -243px;
       width: 13px;
       height: 60px;
       background-size: 344px, 303px;
@@ -1693,6 +1693,187 @@ html.swipebox-html.swipebox-touch {
     position: absolute;
     display: block;
     content: ""; }
+
+.search-contractor-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .search-contractor-content__title {
+    width: 100%;
+    padding-bottom: 0;
+    border-bottom: 0; }
+
+.filter {
+  box-sizing: border-box;
+  width: 320px;
+  margin-top: 10px;
+  padding: 15px 20px;
+  border: 1px solid #c8c8c8;
+  font-size: 0.875em; }
+  .filter__submit {
+    width: 90px;
+    height: 35px;
+    margin: 10px auto;
+    padding-left: 0;
+    border: 0;
+    line-height: 1; }
+  .filter__reset {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: #6a6a6a;
+    border: 0;
+    background: none;
+    font-size: 0.875em; }
+    .filter__reset:hover {
+      text-decoration: none; }
+  .filter__nofilter {
+    text-align: center;
+    color: #6a6a6a;
+    font-size: 0.875em; }
+    .filter__nofilter a {
+      display: block;
+      color: #6a6a6a; }
+      .filter__nofilter a:hover {
+        text-decoration: none; }
+  .filter__item {
+    position: relative;
+    padding-left: 21px;
+    color: #1884bf; }
+    .filter__item:hover {
+      cursor: pointer; }
+    .filter__item:before {
+      left: 0;
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: -181px -185px;
+      width: 14px;
+      height: 14px;
+      background-size: 344px, 303px;
+      background-repeat: no-repeat; }
+    .filter__item.active:before {
+      background-image: url(../images/png-sprite/96dpi/sprite.png);
+      background-position: -275px -168px;
+      width: 14px;
+      height: 14px;
+      background-size: 344px, 303px;
+      background-repeat: no-repeat; }
+  .filter__select-all {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    display: none;
+    font-size: 0.85714em; }
+    .filter__select-all:hover {
+      text-decoration: underline; }
+  .filter__list {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px; }
+    .filter__list.active {
+      display: block; }
+
+.filter-item {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #6a6a6a; }
+  .filter-item.active {
+    padding-top: 2px;
+    padding-left: 5px;
+    color: #fff;
+    background: #00acff; }
+    .filter-item.active:hover {
+      text-decoration: none; }
+  .filter-item input {
+    opacity: 0; }
+  .filter-item:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+
+.search-contractor-results {
+  width: 871px;
+  margin-top: 10px; }
+
+.announce-tender {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 28px 16px 18px;
+  background: -webkit-linear-gradient(top, #1c96c9, #1883bf);
+  background: linear-gradient(to bottom, #1c96c9, #1883bf);
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.announce-tender-form {
+  width: 545px; }
+  .announce-tender-form__input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    color: #6a6a6a;
+    border: 0;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.75);
+    font-size: 0.875em; }
+    .announce-tender-form__input--textarea {
+      height: 86px;
+      margin: 12px 0; }
+  .announce-tender-form .btn, .announce-tender-form .form__submit, .announce-tender-form .contractor-block-avatar__btn, .announce-tender-form .specialization__btn, .announce-tender-form .search-contractor__btn, .announce-tender-form .filter__submit {
+    float: right;
+    background: #21aad3; }
+  .announce-tender-form__submit {
+    text-transform: uppercase;
+    border: 0;
+    background: none; }
+
+.search-contractor-results-list-item .portfolio-album__count {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  color: #00acff; }
+  .search-contractor-results-list-item .portfolio-album__count span {
+    color: #6a6a6a; }
+.search-contractor-results-list-item .contractor-block {
+  box-sizing: border-box;
+  width: 100%; }
+  .search-contractor-results-list-item .contractor-block .contractor-block-info {
+    width: 622px; }
+    .search-contractor-results-list-item .contractor-block .contractor-block-info__rating {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .search-contractor-results-list-item .contractor-block .contractor-block-info__rating a {
+        margin-right: 15px; }
+    .search-contractor-results-list-item .contractor-block .contractor-block-info__service {
+      margin: 12px 0; }
+  .search-contractor-results-list-item .contractor-block .contractor-block-images {
+    width: 100%;
+    height: auto;
+    margin-top: 10px; }
 
 .seo-text h1 {
   padding-bottom: 5px;
