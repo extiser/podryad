@@ -13,14 +13,19 @@ $(document).ready(function () {
         $('.mask, .modal__close, .modal, body').removeClass('active');
     });
     $('.specialization-item a').click(function () {
+        var countSpec = $(this).data('spec');
+        var equallySpec = 10;
         if ($(this).hasClass('foo')) {
             alert('Нельзя выбирать больше 10 специализаций!');
         } else {
             $(this).toggleClass('active');
         }
         var item = $('#specialization').find('a.active');
+        if (countSpec == 'one-spec') {
+            var equallySpec = 1;
+        }
         var countItem = item.length;
-        if (countItem == 10) {
+        if (countItem == equallySpec) {
             $('.specialization-item a').addClass('foo');
             if ($('.specialization-item a').hasClass('active')) {
                 $(item).removeClass('foo');
