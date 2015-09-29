@@ -99,7 +99,8 @@ $(document).ready(function () {
         $('.mask, .modal__close, .modal, body').removeClass('active');
     });
     $('.specialization-item a').click(function () {
-        var countSpec = $(this).data('spec');
+        var countSpec = $(this).data('type');
+        void 0;
         var equallySpec = 10;
         if ($(this).hasClass('foo')) {
             void 0;
