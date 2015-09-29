@@ -148,7 +148,7 @@
     width: 20px;
     height: 20px;
     margin-top: -2px;
-    background-image: url(../images/content/biudzhet.png);
+    background-image: url(../images/biudzhet.png);
 }
 .tender_item_des_info_photo {
     position: relative;
@@ -174,7 +174,7 @@
     width: 20px;
     height: 20px;
     margin-top: -2px;
-    background-image: url(../images/content/biudzhet.png);
+    background-image: url(../images/photo.png);
 }
 .tender_item-avatar {
     width: 197px;
@@ -329,7 +329,7 @@
 .fonTypeFile {
     width: 200px;
     height: 29px;
-    background: url(../images/content/input.png);
+    background: url(../images/input.png);
     position: absolute;
     top: 0;
     left: 0;
@@ -350,7 +350,7 @@
 .contractor-block-info__contact--edit:before {
     top: -2px;
     left: 1px;
-    background-image: url(../images/content/redaktirovat.png);
+    background-image: url(../images/redaktirovat.png);
     width: 15px;
     height: 19px;
     background-repeat: no-repeat;
