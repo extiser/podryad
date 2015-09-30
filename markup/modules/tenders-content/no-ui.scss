@@ -15,11 +15,12 @@
 	direction: ltr
 }
 .noUi-base {
-	width: 100%;
+	width: 96%;
 	height: 30%;
 	position: relative;
 	z-index: 1;
 	top: 10px;
+	left: 10px;
 }
 .noUi-origin {
 	position: absolute;
@@ -52,7 +53,8 @@
 .noUi-horizontal .noUi-handle {
 	width: 34px;
 	height: 28px;
-	top: -10px
+	top: -10px;
+	left: -13px;
 }
 .noUi-background {
 	background: #fff;

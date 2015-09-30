@@ -1,20 +1,4 @@
 $(document).ready(function () {
-    var currentValue = $('.header-city-select__current').html();
-    $('.header-city-select__input').val(currentValue);
-    $('.header-city-select').click(function () {
-        $(this).children('.header-city-select__list').slideToggle();
-    });
-    $('.header-city-select__option').click(function () {
-        var optionValue = $(this).html();
-        var thisValue = $('.header-city-select__current').html();
-        $('.header-city-select__input').val(optionValue);
-        $('.header-city-select__current').html(optionValue);
-        // destroy
-        $(this).remove();
-        $('.header-city-select__list').append('<div class="header-city-select__option">' + thisValue + '</div>');
-    });
-});
-$(document).ready(function () {
     $('.contractor-block-info-show').click(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').parent().children('span').empty();
@@ -85,6 +69,22 @@ $(document).ready(function () {
     });
 })(jQuery);
 $(document).ready(function () {
+    var currentValue = $('.header-city-select__current').html();
+    $('.header-city-select__input').val(currentValue);
+    $('.header-city-select').click(function () {
+        $(this).children('.header-city-select__list').slideToggle();
+    });
+    $('.header-city-select__option').click(function () {
+        var optionValue = $(this).html();
+        var thisValue = $('.header-city-select__current').html();
+        $('.header-city-select__input').val(optionValue);
+        $('.header-city-select__current').html(optionValue);
+        // destroy
+        $(this).remove();
+        $('.header-city-select__list').append('<div class="header-city-select__option">' + thisValue + '</div>');
+    });
+});
+$(document).ready(function () {
     $('a[data-click="modal"]').click(function () {
         var itemWindow = $(this).data('item');
         if ($(itemWindow).hasClass('active')) {
@@ -138,11 +138,11 @@ $(document).ready(function () {
 });
 var slider = document.getElementById('cost-line');
 noUiSlider.create(slider, {
-    start: [20, 80],
+    start: [0, 999999999],
     connect: true,
     range: {
         'min': 0,
-        'max': 100
+        'max': 999999999
     }
 });
 

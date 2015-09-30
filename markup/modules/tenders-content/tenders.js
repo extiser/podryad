@@ -1,10 +1,10 @@
 var slider = document.getElementById('cost-line');
 noUiSlider.create(slider, {
-    start: [20, 80],
+    start: [0, 999999999],
     connect: true,
     range: {
         'min': 0,
-        'max': 100
+        'max': 999999999
     }
 });
 

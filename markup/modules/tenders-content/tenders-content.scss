@@ -70,14 +70,13 @@
 	&__line {
 		margin-bottom: 25px;
 		.noUi-handle {
-			left: 0;
 		}
 		.noUi-handle-lower {
 			@include bg($cost-line-left);
+			
 		}
 		.noUi-handle-upper {
 			@include bg($cost-line-right);
-			left: -13px;
 		}
 	}
 }
