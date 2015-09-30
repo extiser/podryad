@@ -29,20 +29,20 @@
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><!--[if lt IE 9 ]><script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->
 </head>
 <body>
-  <header class="header mainpage">
+  <header class="header">
     <div class="header__wrapper"><a href="#" title="" class="header__logo"></a>
       <div class="header__content">
-        <div class="header-tender"><a href="obiavit_tender.html" title="" class="btn btn--tender">Объявить тендер</a>
+        <div class="header-tender"><a href="#" title="" class="btn btn--tender">Объявить тендер</a>
           <div class="header-tender__text"> <span>20 городов</span><span>354 подрядчика</span><span>231 тендер</span></div>
         </div>
         <div class="header-login"><a href="#" title="" data-click="modal" data-item="#enter">Вход </a><span>/ </span><a href="#" title="" data-click="modal" data-item="#registration">Регистрация</a></div>
         <nav class="top-menu">
           <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Главная</a><span>Главная страница сайта</span></div>
-          <div class="top-menu__item"><a href="tenders.html" title="" class="top-menu__link">Тендеры</a><span>Заявки на ремонт и строительство</span></div>
-          <div class="top-menu__item"><a title="" class="top-menu__link">Подрядчики</a><span>Заявки на ремонт и строительство</span>
-            <div class="top-menu-inside"><a href="search-contractor.html" title="" class="top-menu-inside__link">Ремонт и отделка</a><a href="stroitelstvo.html" title="" class="top-menu-inside__link">Строительство</a></div>
+          <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Тендеры</a><span>Заявки на ремонт и строительство</span></div>
+          <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Подрядчики</a><span>Заявки на ремонт и строительство</span>
+            <div class="top-menu-inside"><a href="#" title="" class="top-menu-inside__link">Ремонт и отделка</a><a href="#" title="" class="top-menu-inside__link">Строительство</a></div>
           </div>
-          <div class="top-menu__item"><a href="news.html" title="" class="top-menu__link">Новости</a><span>Статьи, новости, акции</span></div>
+          <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Новости</a><span>Статьи, новости, акции</span></div>
           <div class="top-menu__item"><a href="#" title="" class="top-menu__link">Обратная связь</a><span>Ваши предложения и отзывы</span></div>
         </nav>
         <div class="header-city">
@@ -62,82 +62,155 @@
       </div>
     </div>
   </header>
-  <section class="main-img">
-    <div class="main-img__content">
-      <div class="main-img__title">Найдите своего Подрядчика не выходя из дома!</div><a href="#" title="" data-click="modal" data-item="#specialization" class="btn btn--search">Выбрать специализацию</a>
-    </div>
-  </section>
   <main class="main">
-    <div class="main-content">
-      <div class="search-contractor">
-        <div class="search-contractor-block">
-          <div class="search-contractor__title">РЕМОНТ И ОТДЕЛКА</div>
-          <div class="search-contractor__img search-contractor__img--repair"></div><a href="search-contractor.html" title="" class="search-contractor__btn">НАЙТИ подрядчика для РЕМОНТа<span>от левкаса до дизайнерского ремонта</span></a>
+    <section class="search-contractor-content">
+      <div class="search-contractor-content__title">Фильтр</div>
+      <form method="" action="" class="filter">
+        <div class="filter__item"> 
+          <div class="filter__title">Архитектура, проектирование и дизайн</div>
+          <div class="filter__select-all">Выбрать все</div>
+          <div class="filter__list">
+            <div class="filter-item">Проектирование частных домов, коттеджей
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Проектирование жилых домов
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Проектирование коммерческих объектов
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Промышленное проектирование
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Готовые проекты
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Проектирование инженерных сетей
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Проектирование инженерных систем
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Архитектурный дизайн
+              <input type="checkbox">
+            </div>
+			 <div class="filter-item">Ландшафтное проектирование и дизайн
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Технадзор
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Сметные работы
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Геодезические работы
+              <input type="checkbox">
+            </div>
+          </div>
         </div>
-        <div class="search-contractor-block">
-          <div class="search-contractor__title">СТРОИТЕЛЬСТВО</div>
-          <div class="search-contractor__img search-contractor__img--build"></div><a href="#" title="" class="search-contractor__btn">НАЙТИ подрядчика для СТРОИТельстВа<span>от забора до жилого дома</span></a>
+        <div class="filter__item"> 
+          <div class="filter__title">Строительно-монтажные работы</div>
+          <div class="filter__select-all">Выбрать все</div>
+          <div class="filter__list">
+            <div class="filter-item">Строительство домов, коттеджей
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Строительство бань и саун
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+		<div class="filter__item"> 
+          <div class="filter__title">Промышленное строительство</div>
+          <div class="filter__select-all">Выбрать все</div>
+          <div class="filter__list">
+            <div class="filter-item">Строительство дорог
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Строительство трубопроводов
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+		<div class="filter__item"> 
+          <div class="filter__title">Благоустройство территорий</div>
+          <div class="filter__select-all">Выбрать все</div>
+          <div class="filter__list">
+            <div class="filter-item">Дорожные работы
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Озеленение
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+		<div class="filter__item"> 
+          <div class="filter__title">Дополнительные услуги</div>
+          <div class="filter__select-all">Выбрать все</div>
+          <div class="filter__list">
+            <div class="filter-item">Высотные работы
+              <input type="checkbox">
+            </div>
+            <div class="filter-item">Аренда строительной техники
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Найти" class="filter__submit">
+        <input type="reset" value="Сбросить фильтр" class="filter__reset">
+        <div class="filter__nofilter">Не нашли подходящий фильтр?<a href="#" title="">Предложите его нам</a></div>
+      </form>
+      <div class="search-contractor-results">
+        <div class="announce-tender">
+          <div class="announce-tender__baner"><img src="static/images/content/announce-tender-baner.jpg" alt=""></div>
+          <form method="" action="" class="announce-tender-form">
+            <input type="text" value="" placeholder="Укажите название (Например: Нужно сделать теплые полы 80 кв.м.)" class="announce-tender-form__input">
+            <textarea placeholder="Перечень работ (опишите максимально подробно: перечень работ, площадь помещений, сроки выполнения, требования к подрядчикам и т. д.)" class="announce-tender-form__input announce-tender-form__input--textarea"></textarea>
+			<div class="btn btn--tender">
+			 <!-- страница search-contractor.html -->
+              <input type="submit" value="Объявить тендер" class="announce-tender-form__submit">
+            </div>
+          </form>
+        </div>
+        <div class="search-contractor-results-list">
+          <div class="search-contractor-results-list-item">
+            <div class="contractor-block">
+              <div class="contractor-block-avatar"><a href="contractor.html"><img src="static/images/content/contractor-avatar-big.jpg" alt=""></a><a href="contractor.html" title="" class="contractor-block-avatar__btn">ПРИГЛАСИТЬ НА ТЕНДЕР</a></div>
+              <div class="contractor-block-info">
+                <div class="contractor-block-info__name"><a href="contractor.html"> ТОО "СтройА",  Астана </a></div>
+                <div class="contractor-block-info__service">Предлагаемые услуги<a href="#" title="" data-show="самые крутые услуги" class="contractor-block-info-show">показать</a></div>
+                <div class="contractor-block-info__rating"><a href="#" title="">Супер 15</a><a href="#" title="">Хорошо 6</a><a href="#" title="">Средне 1</a><a href="#" title="">Так себе 0</a></div>
+                <div class="portfolio-album__count">Фото<span>10</span></div>
+                <div class="contractor-block-images"><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="contractor-block">
+              <div class="contractor-block-avatar"><img src="static/images/content/contractor-avatar-big.jpg" alt=""><a href="#" title="" class="contractor-block-avatar__btn">ПРИГЛАСИТЬ НА ТЕНДЕР</a></div>
+              <div class="contractor-block-info">
+                <div class="contractor-block-info__name">ТОО "СтройА",  Астана</div>
+                <div class="contractor-block-info__service">Предлагаемые услуги<a href="#" title="" data-show="самые крутые услуги" class="contractor-block-info-show">показать</a></div>
+                <div class="contractor-block-info__rating"><a href="#" title="">Супер 15</a><a href="#" title="">Хорошо 6</a><a href="#" title="">Средне 1</a><a href="#" title="">Так себе 0</a></div>
+                <div class="portfolio-album__count">Фото<span>10</span></div>
+                <div class="contractor-block-images"><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="contractor-block">
+              <div class="contractor-block-avatar"><img src="static/images/content/contractor-avatar-big.jpg" alt=""><a href="#" title="" class="contractor-block-avatar__btn">ПРИГЛАСИТЬ НА ТЕНДЕР</a></div>
+              <div class="contractor-block-info">
+                <div class="contractor-block-info__name">ТОО "СтройА",  Астана</div>
+                <div class="contractor-block-info__service">Предлагаемые услуги<a href="#" title="" data-show="самые крутые услуги" class="contractor-block-info-show">показать</a></div>
+                <div class="contractor-block-info__rating"><a href="#" title="">Супер 15</a><a href="#" title="">Хорошо 6</a><a href="#" title="">Средне 1</a><a href="#" title="">Так себе 0</a></div>
+                <div class="portfolio-album__count">Фото<span>10</span></div>
+                <div class="contractor-block-images"><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a><a href="#" title=""><img src="static/images/content/contractor-images.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="service">
-        <div class="service__title">КАК УСТРОЕН СЕРВИС?</div>
-        <div class="service-block service-block--n1"><a href="#" title="" class="service-block__link">Добавьте тендер</a>
-          <div class="service-block__text">Вы можете выбрать мастеров и пригласить их участвовать в тендере, или просто разместить тендер и получить предложения от заинтересовавшихся мастеров.</div>
-        </div>
-        <div class="service-block service-block--n2"><a href="#" title="" class="service-block__link">Изучите предложения</a>
-          <div class="service-block__text">Заинтересовавшиеся мастера оставят свои предложения на выполнение работ. Вы сможете оценить мастеров на основании рейтинга, портфолио и отзывов. </div>
-        </div>
-        <div class="service-block service-block--n3"><a href="#" title="" class="service-block__link">Выберите исполнителя</a>
-          <div class="service-block__text">Выберите предложение наиболее подходящего мастера. При назначении Реального мастера исполнителем, Real Master бесплатно предоставит страховку на сумму выполненных работ. </div>
-        </div>
-        <div class="service-block service-block--n4"><a href="#" title="" class="service-block__link">Оцените работу</a>
-          <div class="service-block__text">После выполнения необходимых работ оставьте отзыв о мастере. Ваш отзыв повлияет на рейтинг мастера и поможет другим заказчикам принять верное решение при выборе исполнителя.</div>
-        </div>
-        <div class="service__bottom"><a href="#" title="" class="btn btn--tender">ОБЪЯВИТЬ ТЕНДеР</a></div>
-      </div>
-      <div class="seo-text">
-        <h1>НАЗВАНИЕ РАЗДЕЛА</h1>
-        <p>С другой стороны укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение новых предложений. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. С другой стороны консультация с широким активом играет важную роль в формировании дальнейших направлений развития.</p>
-        <p>Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа систем массового участия. Таким образом рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития. Разнообразный и богатый опыт консультация с широким активом требуют от нас анализа модели развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке форм развития. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что новая модель организационной деятельности требуют определения и уточнения существенных финансовых и административных условий.</p>
-        <p>Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке модели развития. Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия...</p>
-      </div>
-    </div>
-    <aside class="sidebar">
-      <div class="sidebar-news">
-        <div class="sidebar-news__title">Новости</div>
-        <div class="sidebar-news-block">
-          <div class="sidebar-news-block__img"><img src="static/images/content/sidebar-news.jpg" alt=""></div>
-          <div class="sidebar-news-block__content"><a href="#" title="" class="sidebar-news-block__link">Название новости</a>
-            <p class="sidebar-news-block__text">Текст новости, в общем тут пока что рыбный текст, но в идеале любая информация, новость, которая должна тут быть... В общем я только дизайнер :[ так что хз что тут должно быть, но наверное что-то про ремонт или рабочих, или еще чего...</p>
-          </div>
-        </div>
-        <div class="sidebar-news-block">
-          <div class="sidebar-news-block__img"><img src="static/images/content/sidebar-news.jpg" alt=""></div>
-          <div class="sidebar-news-block__content"><a href="#" title="" class="sidebar-news-block__link">Название новости</a>
-            <p class="sidebar-news-block__text">Текст новости, в общем тут пока что рыбный текст, но в идеале любая информация, новость, которая должна тут быть... В общем я только дизайнер :[ так что хз что тут должно быть, но наверное что-то про ремонт или рабочих, или еще чего...</p>
-          </div>
-        </div>
-        <div class="sidebar-news-block">
-          <div class="sidebar-news-block__img"><img src="static/images/content/sidebar-news.jpg" alt=""></div>
-          <div class="sidebar-news-block__content"><a href="#" title="" class="sidebar-news-block__link">Название новости</a>
-            <p class="sidebar-news-block__text">Текст новости, в общем тут пока что рыбный текст, но в идеале любая информация, новость, которая должна тут быть... В общем я только дизайнер :[ так что хз что тут должно быть, но наверное что-то про ремонт или рабочих, или еще чего...</p>
-          </div>
-        </div>
-        <div class="sidebar-news-block">
-          <div class="sidebar-news-block__img"><img src="static/images/content/sidebar-news.jpg" alt=""></div>
-          <div class="sidebar-news-block__content"><a href="#" title="" class="sidebar-news-block__link">Название новости</a>
-            <p class="sidebar-news-block__text">Текст новости, в общем тут пока что рыбный текст, но в идеале любая информация, новость, которая должна тут быть... В общем я только дизайнер :[ так что хз что тут должно быть, но наверное что-то про ремонт или рабочих, или еще чего...</p>
-          </div>
-        </div>
-        <div class="sidebar-news-block">
-          <div class="sidebar-news-block__img"><img src="static/images/content/sidebar-news.jpg" alt=""></div>
-          <div class="sidebar-news-block__content"><a href="#" title="" class="sidebar-news-block__link">Название новости</a>
-            <p class="sidebar-news-block__text">Текст новости, в общем тут пока что рыбный текст, но в идеале любая информация, новость, которая должна тут быть... В общем я только дизайнер :[ так что хз что тут должно быть, но наверное что-то про ремонт или рабочих, или еще чего...</p>
-          </div>
-        </div>
-      </div>
-      <div class="sidebar-vk"><img src="static/images/content/vk.jpg" alt=""></div>
-    </aside>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
