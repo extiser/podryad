@@ -1,4 +1,20 @@
 $(document).ready(function () {
+    var currentValue = $('.header-city-select__current').html();
+    $('.header-city-select__input').val(currentValue);
+    $('.header-city-select').click(function () {
+        $(this).children('.header-city-select__list').slideToggle();
+    });
+    $('.header-city-select__option').click(function () {
+        var optionValue = $(this).html();
+        var thisValue = $('.header-city-select__current').html();
+        $('.header-city-select__input').val(optionValue);
+        $('.header-city-select__current').html(optionValue);
+        // destroy
+        $(this).remove();
+        $('.header-city-select__list').append('<div class="header-city-select__option">' + thisValue + '</div>');
+    });
+});
+$(document).ready(function () {
     $('.contractor-block-info-show').click(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').parent().children('span').empty();
@@ -69,22 +85,6 @@ $(document).ready(function () {
     });
 })(jQuery);
 $(document).ready(function () {
-    var currentValue = $('.header-city-select__current').html();
-    $('.header-city-select__input').val(currentValue);
-    $('.header-city-select').click(function () {
-        $(this).children('.header-city-select__list').slideToggle();
-    });
-    $('.header-city-select__option').click(function () {
-        var optionValue = $(this).html();
-        var thisValue = $('.header-city-select__current').html();
-        $('.header-city-select__input').val(optionValue);
-        $('.header-city-select__current').html(optionValue);
-        // destroy
-        $(this).remove();
-        $('.header-city-select__list').append('<div class="header-city-select__option">' + thisValue + '</div>');
-    });
-});
-$(document).ready(function () {
     $('a[data-click="modal"]').click(function () {
         var itemWindow = $(this).data('item');
         if ($(itemWindow).hasClass('active')) {
@@ -136,6 +136,32 @@ $(document).ready(function () {
         });
     });
 });
+var slider = document.getElementById('cost-line');
+noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
+});
+
+var valueMin = document.getElementById('cost-line-value-min'),
+    valueMax = document.getElementById('cost-line-value-max');
+
+// When the slider value changes, update the input and span
+slider.noUiSlider.on('update', function (values, handle) {
+    if (handle) {
+        valueMin.value = values[handle];
+    } else {
+        valueMax.value = values[handle];
+    }
+});
+
+// // When the input changes, set the slider value
+// valueInput.addEventListener('change', function () {
+//     slider.noUiSlider.set([null, this.value]);
+// });
 $(document).ready(function () {
     $('.filter__title').click(function () {
         if ($(this).parent().hasClass('active')) {
@@ -169,29 +195,3 @@ $(document).ready(function () {
         }
     });
 });
-var slider = document.getElementById('cost-line');
-noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
-    }
-});
-
-var valueMin = document.getElementById('cost-line-value-min'),
-    valueMax = document.getElementById('cost-line-value-max');
-
-// When the slider value changes, update the input and span
-slider.noUiSlider.on('update', function (values, handle) {
-    if (handle) {
-        valueMin.value = values[handle];
-    } else {
-        valueMax.value = values[handle];
-    }
-});
-
-// // When the input changes, set the slider value
-// valueInput.addEventListener('change', function () {
-//     slider.noUiSlider.set([null, this.value]);
-// });
