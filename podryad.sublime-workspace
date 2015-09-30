@@ -600,7 +600,9 @@
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/podryad/markup/static/scss/nur.scss",
 		"/Users/extiser/git/podryad/markup/modules/modals/modals.js",
+		"/Users/extiser/git/podryad/nurzhik/obiavit_tender.html",
 		"/Users/extiser/git/podryad/markup/modules/search-contractor-content/filter.js",
 		"/Users/extiser/git/podryad/markup/modules/search-contractor-content/search-contractor-content.scss",
 		"/Users/extiser/git/podryad/markup/pages/search-contractor.jade",
@@ -725,9 +727,7 @@
 		"/Users/extiser/git/amkodor/markup/modules/contact-content/contact-content.jade",
 		"/Users/extiser/git/amkodor/markup/links.txt",
 		"/Users/extiser/git/amkodor/markup/pages/service.jade",
-		"/Users/extiser/git/amkodor/markup/modules/service-content/service-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/about-content/about-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/cart-content/cart-content.jade"
+		"/Users/extiser/git/amkodor/markup/modules/service-content/service-content.jade"
 	],
 	"find":
 	{
